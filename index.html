@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Łatwy start</title>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Lato';
+    }
+
+    .navigation {
+        background: rgb(245, 245, 151);
+        height: 17vh;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation-logo {
+        margin-left: 15px;
+        transition: all 1s;
+        opacity: 0;
+        margin-top: 50px;
+    }
+
+    .navigation:hover {
+        background-color: rgb(254, 255, 230);
+    }
+
+    .header {
+        background-color: rgb(254, 255, 230);
+        height: 83vh;
+        display: flex;
+
+
+    }
+
+    .features {
+        background: rgb(255, 255, 255);
+       
+        
+      
+        
+    }
+
+    .box-container {
+       
+        margin: 0 auto;
+        display: grid;
+     
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(3, 200px);
+        
+    
+        grid-gap: 20px 120px;
+       
+
+    }
+
+    .box {
+        
+        background-color: rgba(255, 255, 255, 0.8);
+       padding: 10px;
+       border: 1px solid rgb(163, 160, 160);
+        
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+
+    .about {
+        height: 600px;
+        background: rgb(245, 245, 151);
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .about-text {
+        background: rgb(245, 245, 151);
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    .about-text-description {
+        color: rgb(34, 33, 33);
+        padding: 50px;
+        font-size: 20px;
+        line-height: 40px;
+        margin-top: 50px;
+        opacity: 0;
+        transition: opacity 1s, margin 1s;
+
+    }
+
+   
+
+    .header-text {
+        background-color: rgb(254, 255, 230);
+        height: 100%;
+        width: 50%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+    .header-picture {
+        background-color: rgb(254, 255, 230);
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        margin-top: 50px;
+        
+    }
+
+    .header-text-theme {
+
+        border-radius: 6px;
+        padding: 5px;
+        width: 70%;
+        font-size: 30px;
+        color: rgb(78, 73, 73);
+        font-weight: bold;
+        opacity: 0;
+        margin-top: 50px;
+
+    }
+
+    .header-text-subtitle {
+        margin-left: 50px;
+        font-size: 23px;
+    }
+
+    .space-holder{
+        display: flex;
+        justify-content: space-around;
+       
+    }
+    .space-holder:not(:first-child){
+        margin-top: 50px;
+    }
+
+    .space{
+        height: 200px;
+        width: 30vw;
+        background: rgb(255, 255, 129);
+       
+        border-radius: 10px;
+    }
+    .grid{
+        padding-top: 50px;
+    }
+    
+</style>
+
+<body>
+    <nav class='navigation'>
+        <div class="navigation-logo">
+            <img src="./logo/Zasób 1.png" alt="">
+        </div>
+        <div class="navigation-buttons">
+
+        </div>
+    </nav>
+    <div class="header">
+        <div class="header-text">
+            <p class='header-text-theme header-text-title'>
+                Profesjonalna pomoc w założeiu własnej firmy!
+               
+            </p>
+            <p class='header-text-theme header-text-subtitle'>
+                I cos tam jeszcze co mozna tu napisac wewewewewe
+            </p>
+        </div>
+        <div class="header-picture">
+            <img src="/Zasób 3.png" alt="">
+        </div>
+    </div>
+    <div class="about">
+        <div class="about-text">
+            <div class="about-text-description">
+                Celem Projektu Łatwy Start jest wspieranie przyszłych przedsiębiorców w prowadzeniu
+                firm.
+                Projekt jest dedykowany osobom planującym założenie swojej pierwszej działalności
+                gospodarczej, które poszukują podstawowej wiedzy na temat zakładania i prowadzenia
+                działalności w polsce.
+            </div>
+        </div>
+    </div>
+    
+    <div class="features">
+        <!-- <div class="box-container">
+            <div class="box"> </div>
+            <div class="box"> </div>
+            <div class="box"> </div>
+            <div class="box"> </div>
+            <div class="box"> </div>
+            <div class="box"> </div>
+            <div class="box"> </div>
+            <div class="box"> </div>
+            <div class="box"> </div>
+        </div> -->
+        <div class="grid">
+            <div class="space-holder">
+                <div class="space">Wybór PKD (Polska Klasyfikacja Działalności)</div>
+                <div class="space">Wybór formy rozliczenia podatkowego (KPiR, Ryczałt)</div>
+                <div class="space">Omówienie optymalizacji kosztów prowadzenia Jednoosobowej Działalności
+                    Gospodarczej</div>
+    
+            </div>
+            <div class="space-holder">
+                <div class="space"> Przeszkolenie ze współpracy z księgową on-line</div>
+                <div class="space"></div>
+                <div class="space"></div>
+    
+            </div>
+            <div class="space-holder">
+                <div class="space"></div>
+                <div class="space"></div>
+                <div class="space"></div>
+    
+            </div>
+        </div>
+        
+        <button>CLICK</button>
+
+    </div>
+
+    <script src="./anime-master/lib/anime.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script>
+
+
+        let aboutDescription = document.querySelector('.about-text-description')
+        let logo = document.querySelector('.navigation-logo')
+        let title = document.querySelector('.header-text-title')
+        let picture = document.querySelector('.header-picture')
+        let subtitle = document.querySelector('.header-text-subtitle')
+        let feauters = document.querySelector('.features')
+        let button = document.querySelector('button')
+        let done = false
+        button.addEventListener('click', function () {
+         
+        })
+
+
+        $(document).ready(function () {
+            appearingOnReady(logo)
+            appearingOnReady(title)
+            appearingOnReady(subtitle)
+            appearingOnReady(picture)
+
+        });
+        window.addEventListener('scroll', function () {
+
+
+            appearingOnScroll(aboutDescription)
+
+              if (window.scrollY > feauters.getBoundingClientRect().y && !done) {
+                anime({
+                targets: '.space',
+                scale: [
+                    { value: 0.1, easing: 'easeOutSine', duration: 1000 },
+                    { value: 1, easing: 'easeInOutQuad', duration: 1200 }
+                ],
+                delay: anime.stagger(200, { grid: [3, 3], from: 'center' })
+            });
+                done = true
+            }
+            
+        })
+
+        function appearingOnScroll(element) {
+            if (window.scrollY > element.getBoundingClientRect().y) {
+                console.log(element.getBoundingClientRect().y)
+                element.style.opacity = 1
+                element.style.marginTop = 0
+            }
+        }
+        function appearingOnReady(el) {
+            el.style.transition = 'all 1s'
+            el.style.opacity = 1
+            el.style.marginTop = 0
+        }
+    </script>
+</body>
+
+</html>
