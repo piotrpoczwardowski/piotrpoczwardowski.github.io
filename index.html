@@ -1,309 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Łatwy start</title>
-</head>
-<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-<style>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous"
+  />
+  <style>
     * {
-        margin: 0;
-        padding: 0;
+      margin: 0;
+      padding: 0;
     }
-
+    html {
+      scroll-behavior: smooth;
+    }
     body {
-        font-family: 'Lato';
+      font-family: "Source Sans Pro";
     }
-
+    a {
+      text-decoration: none;
+      color: black;
+    }
     .navigation {
-        background: rgb(245, 245, 151);
-        height: 17vh;
-        transition: all 0.3s;
-        display: flex;
-        align-items: center;
+      background: rgba(40, 255, 216, 0.151);
+      height: 17vh;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
     }
 
     .navigation-logo {
-        margin-left: 15px;
-        transition: all 1s;
-        opacity: 0;
-        margin-top: 50px;
+      margin-left: 15px;
+      transition: all 1s;
+      opacity: 0;
+      margin-top: 50px;
+    }
+
+    .navigation-logo img {
+      width: 350px;
     }
 
     .navigation:hover {
-        background-color: rgb(254, 255, 230);
+      background-color: #f4f1e9;
     }
 
     .header {
-        background-color: rgb(254, 255, 230);
-        height: 83vh;
-        display: flex;
-
-
+      background-color: #f4f1e9;
+      height: 83vh;
+      display: flex;
     }
 
     .features {
-        background: rgb(255, 255, 255);
-       
-        
-      
-        
+      background: #f4f1e9;
     }
 
     .box-container {
-       
-        margin: 0 auto;
-        display: grid;
-     
-        grid-template-columns: repeat(3, 350px);
-        grid-template-rows: repeat(3, 200px);
-        
-    
-        grid-gap: 20px 120px;
-       
+      margin: 0 auto;
+      display: grid;
 
+      grid-template-columns: repeat(3, 350px);
+      grid-template-rows: repeat(3, 200px);
+
+      grid-gap: 20px 120px;
     }
 
     .box {
-        
-        background-color: rgba(255, 255, 255, 0.8);
-       padding: 10px;
-       border: 1px solid rgb(163, 160, 160);
-        
-        font-size: 30px;
-        text-align: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border: 1px solid rgb(163, 160, 160);
 
+      font-size: 30px;
+      text-align: center;
     }
 
-
     .about {
-        height: 600px;
-        background: rgb(245, 245, 151);
-        display: flex;
-        justify-content: flex-end;
+      height: 600px;
+      background: rgb(255, 196, 57);
+      display: flex;
+      justify-content: flex-end;
     }
 
     .about-text {
-        background: rgb(245, 245, 151);
-        height: 100%;
-        width: 50%;
-        display: flex;
-        align-items: center;
+      background: rgb(255, 196, 57);
+      height: 100%;
+      width: 50%;
+      display: flex;
+      align-items: center;
     }
 
     .about-text-description {
-        color: rgb(34, 33, 33);
-        padding: 50px;
-        font-size: 20px;
-        line-height: 40px;
-        margin-top: 50px;
-        opacity: 0;
-        transition: opacity 1s, margin 1s;
+      color: rgb(34, 33, 33);
 
+      font-size: 20px;
+      line-height: 40px;
+      margin-top: 50px;
+      opacity: 0;
+      transition: opacity 1s, margin 1s;
     }
 
-   
-
     .header-text {
-        background-color: rgb(254, 255, 230);
-        height: 100%;
-        width: 50%;
-        padding: 0 10px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      background-color: #ffffff;
+      height: 100%;
+      width: 50%;
 
-
-
+      box-sizing: border-box;
     }
 
     .header-picture {
-        background-color: rgb(254, 255, 230);
-        height: 100%;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        margin-top: 50px;
-        
+      background-color: rgb(255, 255, 255);
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      margin-top: 50px;
+    }
+    .header-picture img {
+      width: 550px;
     }
 
     .header-text-theme {
-
-        border-radius: 6px;
-        padding: 5px;
-        width: 70%;
-        font-size: 30px;
-        color: rgb(78, 73, 73);
-        font-weight: bold;
-        opacity: 0;
-        margin-top: 50px;
-
     }
-
+    .header-text-title {
+      margin-left: 90px;
+      margin-top: 100px;
+      font-size: 45px;
+    }
     .header-text-subtitle {
-        margin-left: 50px;
-        font-size: 23px;
+      font-size: 25px;
+      margin-left: 90px;
+      margin-top: 20px;
+      color: rgb(39, 39, 39);
+      line-height: 35px;
+    }
+    .header-button-subscribe-nav {
+      background: linear-gradient(rgb(4, 17, 201), rgba(12, 7, 255, 0.747));
+      margin-top: 40px;
+      width: 150px;
+      height: 55px;
+      margin-left: 90px;
+      border-radius: 5px;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      cursor: pointer;
     }
 
-    .space-holder{
-        display: flex;
-        justify-content: space-around;
-       
+    .space-holder {
+      display: flex;
+      justify-content: space-around;
     }
-    .space-holder:not(:first-child){
-        margin-top: 50px;
+    .space-holder:not(:first-child) {
+      margin-top: 50px;
     }
 
-    .space{
-        height: 200px;
-        width: 30vw;
-        background: rgb(255, 255, 129);
-       
-        border-radius: 10px;
-    }
-    .grid{
-        padding-top: 50px;
-    }
-    
-</style>
+    .space {
+      height: 200px;
+      width: 25vw;
+      border: 1px solid rgba(0, 0, 0, 0.582);
 
-<body>
-    <nav class='navigation'>
-        <div class="navigation-logo">
-            <img src="./logo/Zasób 1.png" alt="">
+      opacity: 0;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      transition: all;
+    }
+
+    .grid {
+      padding-top: 50px;
+    }
+
+    .space-text-contener {
+      text-align: center;
+      line-height: 30px;
+
+      color: rgba(0, 0, 0, 0.76);
+      font-size: 20px;
+    }
+
+    .navigation-buttons {
+      display: flex;
+      margin-left: 80px;
+    }
+    .nav-button {
+      cursor: pointer;
+      font-size: 25px;
+    }
+    .nav-button:not(:first-child) {
+      padding-left: 40px;
+    }
+
+    .nav-button:hover {
+      color: rgb(19, 122, 255);
+    }
+  </style>
+
+  <body>
+    <nav class="navigation">
+      <div class="navigation-logo">
+        <img src="./picture/Zasób 6.png" alt="" />
+      </div>
+      <div class="navigation-buttons">
+        <div class="nav-button goal"><a href="#about">Cel</a></div>
+        <div class="nav-button help"><a href="#features">Korzyści</a></div>
+        <div class="nav-button subscribe">
+          <a href="#subscribe">Zapisz się</a>
         </div>
-        <div class="navigation-buttons">
-
-        </div>
+      </div>
     </nav>
     <div class="header">
-        <div class="header-text">
-            <p class='header-text-theme header-text-title'>
-                Profesjonalna pomoc w założeiu własnej firmy!
-               
-            </p>
-            <p class='header-text-theme header-text-subtitle'>
-                I cos tam jeszcze co mozna tu napisac wewewewewe
-            </p>
+      <div class="header-text">
+        <p class="header-text-theme header-text-title">
+          Załóż swoją firmę <br />
+          <strong>za darmo!</strong>
+        </p>
+        <p class="header-text-theme header-text-subtitle">
+          Profesjonalna pomoc w założeniu<br />
+          firmy bez wychodzenia z domu.<br />
+          Krok po kroku pomożemy Tobie<br />
+          załatwić wszelkie formalności.
+        </p>
+        <div class="header-button-subscribe-nav">
+          <div class="header-button-text">Sprawdź to</div>
+          <div class="header-button-icon"><i class='fa fa-angle-right	
+            '></i></div>
         </div>
-        <div class="header-picture">
-            <img src="/Zasób 3.png" alt="">
-        </div>
+      </div>
+      <div class="header-picture">
+        <img src="/picture/ludzik34 (1).png" alt="" />
+      </div>
     </div>
-    <div class="about">
-        <div class="about-text">
-            <div class="about-text-description">
-                Celem Projektu Łatwy Start jest wspieranie przyszłych przedsiębiorców w prowadzeniu
-                firm.
-                Projekt jest dedykowany osobom planującym założenie swojej pierwszej działalności
-                gospodarczej, które poszukują podstawowej wiedzy na temat zakładania i prowadzenia
-                działalności w polsce.
-            </div>
+    <div id="about" class="about">
+      <div class="about-text">
+        <!-- <form
+          action="https://formspree.io/piotrpoczwardowski@gmail.com"
+          method="POST"
+        >
+          <input type="text" name="name" />
+          <button>Submit</button>
+        </form> -->
+        <div class="about-text-description">
+          Celem Projektu Łatwy Start jest wspieranie przyszłych przedsiębiorców
+          w prowadzeniu firm. Projekt jest dedykowany osobom planującym
+          założenie swojej pierwszej działalności gospodarczej, które poszukują
+          podstawowej wiedzy na temat zakładania i prowadzenia działalności w
+          polsce.
         </div>
+      </div>
     </div>
-    
-    <div class="features">
-        <!-- <div class="box-container">
-            <div class="box"> </div>
-            <div class="box"> </div>
-            <div class="box"> </div>
-            <div class="box"> </div>
-            <div class="box"> </div>
-            <div class="box"> </div>
-            <div class="box"> </div>
-            <div class="box"> </div>
-            <div class="box"> </div>
-        </div> -->
-        <div class="grid">
-            <div class="space-holder">
-                <div class="space">Wybór PKD (Polska Klasyfikacja Działalności)</div>
-                <div class="space">Wybór formy rozliczenia podatkowego (KPiR, Ryczałt)</div>
-                <div class="space">Omówienie optymalizacji kosztów prowadzenia Jednoosobowej Działalności
-                    Gospodarczej</div>
-    
-            </div>
-            <div class="space-holder">
-                <div class="space"> Przeszkolenie ze współpracy z księgową on-line</div>
-                <div class="space"></div>
-                <div class="space"></div>
-    
-            </div>
-            <div class="space-holder">
-                <div class="space"></div>
-                <div class="space"></div>
-                <div class="space"></div>
-    
-            </div>
-        </div>
-        
-        <button>CLICK</button>
 
+    <div class="features" id="features">
+      <div class="grid"></div>
     </div>
 
     <script src="./anime-master/lib/anime.min.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+      let aboutDescription = document.querySelector(".about-text-description");
+      let logo = document.querySelector(".navigation-logo");
+      let title = document.querySelector(".header-text-title");
+      let picture = document.querySelector(".header-picture");
+      let subtitle = document.querySelector(".header-text-subtitle");
+      let feauters = document.querySelector(".features");
+      let grid = document.querySelector(".grid");
+      let textArray = [
+        "Przeszkolenie z wystawiania faktur + darmowy program do ich wystawiania",
+        "Pomoc w wyborze rachunku bankowego",
+        "Wybór PKD (Polska Klasyfikacja Działalności)",
+        "Omówienie optymalizacji kosztów prowadzenia Jednoosobowej Działalności Gospodarczej",
+        "Omówienie strategii budowania zdolności kredytowej pod przyszłe finansowanie(planowanie finansowe)",
+        "Omówienie zakresu funkcjonalnego profilu zaufanego + wskazówki do rejestracji",
+        "Wybór optymalnych okresów rozliczeniowych PIT (miesięcznie, kwartalnie)",
+        "Doradztwo w zakresie płatności podatku VAT (płatnik / nie płatnik)",
+        "Omówienie optymalizacji kosztów prowadzenia Jednoosobowej Działalności Gospodarczej"
+      ];
+      let done = false;
+      let textCounter = 0;
+      let headerButtonIcon = document.querySelector(".header-button-icon");
 
-
-        let aboutDescription = document.querySelector('.about-text-description')
-        let logo = document.querySelector('.navigation-logo')
-        let title = document.querySelector('.header-text-title')
-        let picture = document.querySelector('.header-picture')
-        let subtitle = document.querySelector('.header-text-subtitle')
-        let feauters = document.querySelector('.features')
-        let button = document.querySelector('button')
-        let done = false
-        button.addEventListener('click', function () {
-         
-        })
-
-
-        $(document).ready(function () {
-            appearingOnReady(logo)
-            appearingOnReady(title)
-            appearingOnReady(subtitle)
-            appearingOnReady(picture)
-
-        });
-        window.addEventListener('scroll', function () {
-
-
-            appearingOnScroll(aboutDescription)
-
-              if (window.scrollY > feauters.getBoundingClientRect().y && !done) {
-                anime({
-                targets: '.space',
-                scale: [
-                    { value: 0.1, easing: 'easeOutSine', duration: 1000 },
-                    { value: 1, easing: 'easeInOutQuad', duration: 1200 }
-                ],
-                delay: anime.stagger(200, { grid: [3, 3], from: 'center' })
-            });
-                done = true
-            }
-            
-        })
-
-        function appearingOnScroll(element) {
-            if (window.scrollY > element.getBoundingClientRect().y) {
-                console.log(element.getBoundingClientRect().y)
-                element.style.opacity = 1
-                element.style.marginTop = 0
-            }
+      anime({
+        targets: headerButtonIcon,
+        loop: true,
+        translateX: [-10, 5],
+        direction: "alternate"
+      });
+      for (let i = 0; i < 3; i++) {
+        let row = document.createElement("div");
+        row.classList.add("space-holder");
+        for (let j = 0; j < 3; j++) {
+          let cell = document.createElement("div");
+          cell.classList.add("space");
+          let text = document.createElement("p");
+          let textContener = document.createElement("div");
+          let iconContener = document.createElement("div");
+          iconContener.classList.add("space-icon-contener");
+          textContener.classList.add("space-text-contener");
+          textContener.appendChild(text);
+          text.innerHTML = textArray[textCounter];
+          cell.appendChild(textContener);
+          row.appendChild(cell);
+          textCounter++;
         }
-        function appearingOnReady(el) {
-            el.style.transition = 'all 1s'
-            el.style.opacity = 1
-            el.style.marginTop = 0
+        grid.appendChild(row);
+      }
+
+      $(document).ready(function() {
+        appearingOnReady(logo);
+
+        appearingOnReady(picture);
+      });
+      window.addEventListener("scroll", function() {
+        appearingOnScroll(aboutDescription);
+
+        if (window.scrollY > feauters.getBoundingClientRect().y && !done) {
+          anime({
+            targets: ".space",
+
+            scale: [
+              { value: 0, easing: "easeOutSine", duration: 0 },
+              { value: 1, easing: "easeInOutQuad", duration: 1200 }
+            ],
+            opacity: [{ value: 1, easing: "easeInOutQuad", duration: 1200 }],
+            delay: anime.stagger(100, { grid: [3, 3], from: "center" })
+          });
+          done = true;
         }
+      });
+
+      function appearingOnScroll(element) {
+        if (window.scrollY > element.getBoundingClientRect().y) {
+          console.log(element.getBoundingClientRect().y);
+          element.style.opacity = 1;
+          element.style.marginTop = 0;
+        }
+      }
+      function appearingOnReady(el) {
+        el.style.transition = "all 1s";
+        el.style.opacity = 1;
+        el.style.marginTop = 0;
+      }
     </script>
-</body>
-
+  </body>
 </html>
