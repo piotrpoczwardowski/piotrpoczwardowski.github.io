@@ -32,7 +32,7 @@
       color: black;
     }
     .navigation {
-      background: rgba(40, 255, 216, 0.151);
+      background: linear-gradient(to right, rgba(12, 7, 255, 0.747),rgb(4, 17, 201));
       height: 17vh;
       transition: all 0.3s;
       display: flex;
@@ -64,34 +64,17 @@
       background: #f4f1e9;
     }
 
-    .box-container {
-      margin: 0 auto;
-      display: grid;
-
-      grid-template-columns: repeat(3, 350px);
-      grid-template-rows: repeat(3, 200px);
-
-      grid-gap: 20px 120px;
-    }
-
-    .box {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 10px;
-      border: 1px solid rgb(163, 160, 160);
-
-      font-size: 30px;
-      text-align: center;
-    }
+  
 
     .about {
       height: 600px;
-      background: rgb(255, 196, 57);
+      background: rgb(116, 118, 226);
       display: flex;
       justify-content: flex-end;
     }
 
     .about-text {
-      background: rgb(255, 196, 57);
+      background: rgb(116, 118, 226);
       height: 100%;
       width: 50%;
       display: flex;
@@ -156,6 +139,7 @@
       justify-content: space-around;
       align-items: center;
       cursor: pointer;
+      font-size: 20px;
     }
 
     .space-holder {
@@ -173,11 +157,21 @@
 
       opacity: 0;
       border-radius: 10px;
-      display: flex;
+     
       justify-content: center;
       align-items: center;
       padding: 15px;
       transition: all;
+
+    }
+
+    .space-icon-contener{
+      display: flex;
+      justify-content: center;
+    }
+    .space-icon-contener img{
+      width: 50px;
+      height: 50px;
     }
 
     .grid {
@@ -204,9 +198,11 @@
       padding-left: 40px;
     }
 
-    .nav-button:hover {
+    a:hover {
       color: rgb(19, 122, 255);
     }
+
+    
   </style>
 
   <body>
@@ -264,6 +260,7 @@
     </div>
 
     <div class="features" id="features">
+     
       <div class="grid"></div>
     </div>
 
@@ -307,6 +304,10 @@
           let text = document.createElement("p");
           let textContener = document.createElement("div");
           let iconContener = document.createElement("div");
+          let img = document.createElement('img')
+          img.src = `/icons/Zasób ${textCounter}.png`
+          iconContener.appendChild(img)
+          cell.appendChild(iconContener)
           iconContener.classList.add("space-icon-contener");
           textContener.classList.add("space-text-contener");
           textContener.appendChild(text);
