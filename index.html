@@ -323,7 +323,15 @@
           x.style.color = 'white'
         })
       })
-
+      
+      document.querySelectorAll(".navigation-buttons a").forEach(function(x){
+        x.addEventListener('mouseenter', function(){
+          this.style.color = '#0099CC'
+        })
+        x.addEventListener('mouseleave', function(){
+          this.style.color = 'black'
+        })
+      })
 
       anime({
         targets: headerButtonIcon,
