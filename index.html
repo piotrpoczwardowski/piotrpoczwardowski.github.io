@@ -32,7 +32,7 @@
       color: black;
     }
     .navigation {
-      background: rgba(12, 7, 255, 0.747);
+      background: rgb(135, 93, 233);
       height: 17vh;
       transition: all 0.3s;
       display: flex;
@@ -50,9 +50,7 @@
       width: 350px;
     }
 
-    .navigation:hover {
-      background-color: #f4f1e9;
-    }
+   
 
     .header {
       background-color: #f4f1e9;
@@ -65,14 +63,14 @@
     }
 
     .about {
-      height: 600px;
-      background: rgb(116, 118, 226);
+      height: 500px;
+      background: rgb(135, 93, 233);
       display: flex;
       justify-content: flex-end;
     }
 
     .about-text {
-      background: rgb(116, 118, 226);
+      background: rgb(135, 93, 233);
       height: 100%;
       width: 50%;
       display: flex;
@@ -81,12 +79,13 @@
 
     .about-text-description {
       color: rgb(34, 33, 33);
-
-      font-size: 20px;
+  text-align: center;
+      font-size: 25px;
       line-height: 40px;
       margin-top: 50px;
       opacity: 0;
       transition: opacity 1s, margin 1s;
+      color: rgb(231, 231, 231);
     }
 
     .header-text {
@@ -152,7 +151,7 @@
     .space {
       height: 200px;
       width: 25vw;
-      border: 1px solid rgba(0, 0, 0, 0.582);
+     
 
       opacity: 0;
       border-radius: 10px;
@@ -168,8 +167,8 @@
       justify-content: center;
     }
     .space-icon-contener img {
-      width: 50px;
-      height: 50px;
+      width: 70px;
+      height: 55px;
     }
 
     .grid {
@@ -179,7 +178,7 @@
     .space-text-contener {
       text-align: center;
       line-height: 30px;
-
+      margin-top: 25px;
       color: rgba(0, 0, 0, 0.76);
       font-size: 20px;
     }
@@ -189,6 +188,11 @@
       margin-left: 90px;
       opacity: 0;
       margin-top: 50px;
+      
+    }
+
+    .navigation-buttons a{
+      color: white;
     }
     .nav-button {
       cursor: pointer;
@@ -200,19 +204,20 @@
 
     a:hover {
       color: rgb(19, 122, 255);
+      
     }
+
     .subscribe a {
-      color: white;
-      padding: 7px;
       border: 1px solid white;
-      border-radius: 3px;
+      padding: 7px;
     }
+   
   </style>
 
   <body>
     <nav class="navigation">
       <div class="navigation-logo">
-        <img src="./picture/Zasób 6.png" alt="" />
+        <img src="./picture/Zasób 2.png" alt="" />
       </div>
       <div class="navigation-buttons">
         <div class="nav-button goal"><a href="#about">Cel</a></div>
@@ -274,6 +279,9 @@
     <script src="./anime-master/lib/anime.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+      let subscribe = document.querySelector('.subscribe a')
+      let navigation = document.querySelector('.navigation')
+      let navigationLogoPicture = document.querySelector('.navigation-logo img')
       let aboutDescription = document.querySelector(".about-text-description");
       let logo = document.querySelector(".navigation-logo");
       let headerText = document.querySelector(".header-text");
@@ -297,6 +305,26 @@
       let textCounter = 0;
       let headerButtonIcon = document.querySelector(".header-button-icon");
       let navigationButtons = document.querySelector(".navigation-buttons");
+
+      navigation.addEventListener('mouseenter', function(){
+        this.style.background = 'white'
+        navigationLogoPicture.src = './picture/Zasób 1.png'
+       subscribe.style.border = '1px solid black'
+        document.querySelectorAll(".navigation-buttons a").forEach(function(x){
+          x.style.color = 'black'
+        })
+      })
+
+      navigation.addEventListener('mouseleave', function(){
+        this.style.background = 'rgb(135, 93, 233)'
+        navigationLogoPicture.src = './picture/Zasób 2.png'
+        subscribe.style.border = '1px solid white'
+        document.querySelectorAll(".navigation-buttons a").forEach(function(x){
+          x.style.color = 'white'
+        })
+      })
+
+
       anime({
         targets: headerButtonIcon,
         loop: true,
@@ -353,7 +381,7 @@
 
       function appearingOnScroll(element) {
         if (window.scrollY > element.getBoundingClientRect().y) {
-          console.log(element.getBoundingClientRect().y);
+        
           element.style.opacity = 1;
           element.style.marginTop = 0;
         }
