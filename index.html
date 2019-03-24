@@ -32,7 +32,7 @@
       color: black;
     }
     .navigation {
-      background: linear-gradient(to right, rgba(12, 7, 255, 0.747),rgb(4, 17, 201));
+      background: rgba(12, 7, 255, 0.747);
       height: 17vh;
       transition: all 0.3s;
       display: flex;
@@ -63,8 +63,6 @@
     .features {
       background: #f4f1e9;
     }
-
-  
 
     .about {
       height: 600px;
@@ -157,19 +155,18 @@
 
       opacity: 0;
       border-radius: 10px;
-     
+
       justify-content: center;
       align-items: center;
       padding: 15px;
       transition: all;
-
     }
 
-    .space-icon-contener{
+    .space-icon-contener {
       display: flex;
       justify-content: center;
     }
-    .space-icon-contener img{
+    .space-icon-contener img {
       width: 50px;
       height: 50px;
     }
@@ -188,21 +185,28 @@
 
     .navigation-buttons {
       display: flex;
-      margin-left: 80px;
+      margin-left: 90px;
     }
     .nav-button {
       cursor: pointer;
-      font-size: 25px;
+      font-size: 22px;
     }
     .nav-button:not(:first-child) {
-      padding-left: 40px;
+      padding-left: 50px;
     }
 
     a:hover {
       color: rgb(19, 122, 255);
     }
-
+   .subscribe a{
+     color: white;
+     padding: 7px;
+     border: 1px solid white;
+     border-radius: 3px;
     
+     
+    
+   }
   </style>
 
   <body>
@@ -214,7 +218,7 @@
         <div class="nav-button goal"><a href="#about">Cel</a></div>
         <div class="nav-button help"><a href="#features">Korzyści</a></div>
         <div class="nav-button subscribe">
-          <a href="#subscribe">Zapisz się</a>
+          <a href="#subscribe">Zapisz się!</a>
         </div>
       </div>
     </nav>
@@ -232,8 +236,12 @@
         </p>
         <div class="header-button-subscribe-nav">
           <div class="header-button-text">Sprawdź to</div>
-          <div class="header-button-icon"><i class='fa fa-angle-right	
-            '></i></div>
+          <div class="header-button-icon">
+            <i
+              class="fa fa-angle-right	
+            "
+            ></i>
+          </div>
         </div>
       </div>
       <div class="header-picture">
@@ -260,7 +268,6 @@
     </div>
 
     <div class="features" id="features">
-     
       <div class="grid"></div>
     </div>
 
@@ -292,7 +299,7 @@
       anime({
         targets: headerButtonIcon,
         loop: true,
-        translateX: [-10, 5],
+        translateX: [-10, 0],
         direction: "alternate"
       });
       for (let i = 0; i < 3; i++) {
@@ -304,10 +311,10 @@
           let text = document.createElement("p");
           let textContener = document.createElement("div");
           let iconContener = document.createElement("div");
-          let img = document.createElement('img')
-          img.src = `/icons/Zasób ${textCounter}.png`
-          iconContener.appendChild(img)
-          cell.appendChild(iconContener)
+          let img = document.createElement("img");
+          img.src = `/icons/Zasób ${textCounter}.png`;
+          iconContener.appendChild(img);
+          cell.appendChild(iconContener);
           iconContener.classList.add("space-icon-contener");
           textContener.classList.add("space-text-contener");
           textContener.appendChild(text);
