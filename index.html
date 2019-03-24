@@ -32,7 +32,7 @@
       color: black;
     }
     .navigation {
-      background: rgb(135, 93, 233);
+      background: rgb(162, 122, 255);
       height: 17vh;
       transition: all 0.3s;
       display: flex;
@@ -53,24 +53,24 @@
    
 
     .header {
-      background-color: #f4f1e9;
+      background-color: #f2ebf7;
       height: 83vh;
       display: flex;
     }
 
     .features {
-      background: #f4f1e9;
+      background-color: #f2ebf7;
     }
 
     .about {
       height: 500px;
-      background: rgb(135, 93, 233);
+      background: rgb(162, 122, 255);
       display: flex;
       justify-content: flex-end;
     }
 
     .about-text {
-      background: rgb(135, 93, 233);
+      background: rgb(162, 122, 255);
       height: 100%;
       width: 50%;
       display: flex;
@@ -126,13 +126,13 @@
       line-height: 35px;
     }
     .header-button-subscribe-nav {
-      background: linear-gradient(rgb(4, 17, 201), rgba(12, 7, 255, 0.747));
+      background: linear-gradient(rgb(97, 77, 150), rgb(162, 122, 255));
       margin-top: 40px;
       width: 150px;
       height: 55px;
       margin-left: 90px;
       border-radius: 5px;
-      color: white;
+      color:  #f2ebf7;
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -217,7 +217,7 @@
   <body>
     <nav class="navigation">
       <div class="navigation-logo">
-        <img src="./picture/Zasób 2.png" alt="" />
+        <img src="./picture/Zasób 1.png" alt="" />
       </div>
       <div class="navigation-buttons">
         <div class="nav-button goal"><a href="#about">Cel</a></div>
@@ -308,7 +308,7 @@
 
       navigation.addEventListener('mouseenter', function(){
         this.style.background = 'white'
-        navigationLogoPicture.src = './picture/Zasób 1.png'
+       
        subscribe.style.border = '1px solid black'
         document.querySelectorAll(".navigation-buttons a").forEach(function(x){
           x.style.color = 'black'
@@ -317,7 +317,7 @@
 
       navigation.addEventListener('mouseleave', function(){
         this.style.background = 'rgb(135, 93, 233)'
-        navigationLogoPicture.src = './picture/Zasób 2.png'
+      
         subscribe.style.border = '1px solid white'
         document.querySelectorAll(".navigation-buttons a").forEach(function(x){
           x.style.color = 'white'
