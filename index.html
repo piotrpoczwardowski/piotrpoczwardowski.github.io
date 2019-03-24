@@ -90,11 +90,12 @@
     }
 
     .header-text {
-      background-color: #ffffff;
+      background-color: #ffffff00;
       height: 100%;
       width: 50%;
-
+      margin-top: 50px;
       box-sizing: border-box;
+      opacity: 0;
     }
 
     .header-picture {
@@ -104,11 +105,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      opacity: 0;
-      margin-top: 50px;
     }
     .header-picture img {
       width: 550px;
+      opacity: 0;
+      margin-top: 50px;
     }
 
     .header-text-theme {
@@ -186,6 +187,8 @@
     .navigation-buttons {
       display: flex;
       margin-left: 90px;
+      opacity: 0;
+      margin-top: 50px;
     }
     .nav-button {
       cursor: pointer;
@@ -198,15 +201,12 @@
     a:hover {
       color: rgb(19, 122, 255);
     }
-   .subscribe a{
-     color: white;
-     padding: 7px;
-     border: 1px solid white;
-     border-radius: 3px;
-    
-     
-    
-   }
+    .subscribe a {
+      color: white;
+      padding: 7px;
+      border: 1px solid white;
+      border-radius: 3px;
+    }
   </style>
 
   <body>
@@ -276,8 +276,9 @@
     <script>
       let aboutDescription = document.querySelector(".about-text-description");
       let logo = document.querySelector(".navigation-logo");
+      let headerText = document.querySelector(".header-text");
       let title = document.querySelector(".header-text-title");
-      let picture = document.querySelector(".header-picture");
+      let picture = document.querySelector(".header-picture img");
       let subtitle = document.querySelector(".header-text-subtitle");
       let feauters = document.querySelector(".features");
       let grid = document.querySelector(".grid");
@@ -295,7 +296,7 @@
       let done = false;
       let textCounter = 0;
       let headerButtonIcon = document.querySelector(".header-button-icon");
-
+      let navigationButtons = document.querySelector(".navigation-buttons");
       anime({
         targets: headerButtonIcon,
         loop: true,
@@ -328,8 +329,9 @@
 
       $(document).ready(function() {
         appearingOnReady(logo);
-
+        appearingOnReady(navigationButtons);
         appearingOnReady(picture);
+        appearingOnReady(headerText);
       });
       window.addEventListener("scroll", function() {
         appearingOnScroll(aboutDescription);
