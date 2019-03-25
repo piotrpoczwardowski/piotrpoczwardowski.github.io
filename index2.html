@@ -57,7 +57,7 @@
 
       @media (min-width: 250px) {
         .navigation {
-            background: #3578E5;
+          background: #3578e5;
         }
         .navigation__logo {
           text-align: center;
@@ -79,10 +79,10 @@
           color: rgb(0, 0, 0);
           font-size: 1.2em;
         }
-        .navigation__button--subscribe a{
-            color: white;
-            border: 1px solid white;
-            padding: 5px;
+        .navigation__button--subscribe a {
+          color: white;
+          border: 1px solid white;
+          padding: 5px;
         }
         .header {
           background: rgb(241, 246, 255);
@@ -104,12 +104,11 @@
           display: flex;
           justify-content: space-around;
           align-items: center;
-         border-radius: 5px;
+          border-radius: 5px;
           width: 50vw;
           height: 45px;
           margin-top: 25px;
-          margin-left: auto;
-          margin-right: auto;
+          margin: 20px auto;
           cursor: pointer;
           color: white;
           background: linear-gradient(rgb(0, 29, 196), rgb(92, 113, 230));
@@ -147,7 +146,6 @@
           background: rgb(255, 255, 255);
         }
         .benefits__card {
-         
           display: flex;
           padding: 5px;
           width: 90vw;
@@ -168,6 +166,54 @@
         .benefits__icon--image {
           width: 28vw;
         }
+        .subscribe {
+          background: black;
+          height: 500px;
+        }
+        .subscribe__title{
+          color: white;
+          text-align: center;
+          padding-top: 30px;
+          font-size: 1.5em;
+        }
+        .subscribe__contener{
+          padding-top: 50px;
+          width: 80vw;
+          margin: 0 auto;
+   
+        }
+       
+        .subscribe__contener--inputs{
+         
+        
+          
+
+        }
+        .subscribe__contener--form input{
+         
+          height: 25px;;
+          margin-top:5px;
+        width: 100%;
+        background: black;
+        color: white;
+        border: none;
+        border-bottom: 1px solid white;
+       
+
+     }
+      .subscribe__contener--message input{
+        height: 120px;;
+          margin-top:5px;
+        width: 100%;
+        background: black;
+      }
+        .subscribe__contener--form input::placeholder{
+          color: rgb(233, 233, 233);
+        }
+        .subscribe__contener--message input::placeholder{
+          color: rgb(235, 235, 235);
+          margin-top: -50px;
+        }
         @media (min-width: 430px) {
           p,
           a {
@@ -176,6 +222,18 @@
           .header__text--title {
             font-size: 8vw;
           }
+
+          .subscribe__title{
+            font-size: 2em;
+          }
+          .subscribe__contener--inputs input{
+            height: 40px;
+          }
+          .subscribe__contener--form input::placeholder{
+          
+          font-size: 1.4em;
+        }
+          
         }
       }
       @media (min-width: 460px) {
@@ -188,12 +246,12 @@
         }
       }
 
-        @media (min-width: 500px) {
-        .navigation__button a{
-            font-size: 1.5em;
+      @media (min-width: 500px) {
+        .navigation__button a {
+          font-size: 1.5em;
         }
-        .header__text--title{
-            font-size: 1.9em;
+        .header__text--title {
+          font-size: 1.9em;
         }
       }
 
@@ -265,7 +323,7 @@
           flex-direction: row;
         }
         .header__text--element {
-            margin-top: 40px;
+          margin-top: 40px;
           font-size: 3vw;
         }
         .header__text--title {
@@ -274,158 +332,154 @@
         .header__text--subtitle {
           font-size: 1.1em;
         }
-        .header__text--button{
-            width: 25vw;
+        .header__text--button {
+          width: 25vw;
         }
 
-
         .header__picture {
-           margin: 0 auto;
+          margin: 0 auto;
         }
 
         .header__picture--image {
           width: 40vw;
         }
 
-        .goal{
-            display: flex;
+        .goal {
+          display: flex;
         }
         .goal__picture--image {
           width: 40vw;
         }
-        .goal__text{
-            display: flex;
-           align-items: center;
-           
+        .goal__text {
+          display: flex;
+          align-items: center;
         }
-        .goal__text--paragraph{
-            font-size: 1.1em;
+        .goal__text--paragraph {
+          font-size: 1.1em;
         }
-        .benefits{
-            display: flex;
-           flex-wrap: wrap;
+        .benefits {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .benefits__card {
+          width: 40vw;
+        }
+        .benefits__card:not(:nth-child(0)) {
+          margin-top: 10px;
+        }
+        .benefits__text p {
+          font-size: 1em;
+        }
+        .subscribe__contener--inputs{
+         
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+          
 
         }
-        .benefits__card{
-            width: 40vw;
-            
-        }
-        .benefits__card:not(:nth-child(0)){
-            margin-top: 10px;
-        }
-        .benefits__text p{
-            font-size: 1em;
-        }
+
+         .subscribe__contener--inputs input{
+           width: 45%;
+           margin-left: 15px;
+         }
       }
 
-            @media (min-width: 1000px) {
-
-                 .navigation {
-                    height: 110px;
-         
+      @media (min-width: 1000px) {
+        .navigation {
+          height: 110px;
         }
         .navigation__logo {
-           display: flex;
-           align-items: center;
+          display: flex;
+          align-items: center;
         }
         .navigation__logo--image {
-            width: 25vw;
-
+          width: 25vw;
         }
         .navigation__button {
         }
         .navigation__buttons {
-  
         }
         .navigation__button a {
-            font-size: 1.4em;
+          font-size: 1.4em;
         }
         .header {
-            height: 600px;
+          height: 600px;
         }
 
         .header__text {
-           width: 50%;
-           text-align: left;
-           margin-left: 100px;
+          width: 50%;
+          text-align: left;
+          margin-left: 100px;
           margin-top: 100px;
-          
         }
         .header__text--element {
-            font-size: 1.2em;
-            margin: 0;
+          font-size: 1.2em;
+          margin: 0;
         }
         .header__text--title {
-            font-size: 2.5em;
+          font-size: 2.5em;
         }
         .header__text--subtitle {
-            font-size: 1.2em;
-            margin-top: 30px;
+          font-size: 1.2em;
+          margin-top: 30px;
         }
         .header__text--button {
-            margin-top: 30px;
-            width: 15vw;
-          
+          margin-top: 30px;
+          width: 15vw;
         }
         .header__text--button p {
-            font-size: 1em;
+          font-size: 1em;
         }
         .header__button--icon {
-       
         }
         .header__picture {
-            display: flex;
-            align-items: center;
+          display: flex;
+          align-items: center;
+         
         }
         .header__picture--image {
-     
         }
         .goal {
-        
         }
         .goal__picture {
           width: 50%;
         }
         .goal__picture--image {
-        
         }
         .goal__text {
-        width: 50%;
-        text-align: right;
-        font-size: 1.6em;
-        line-height: 45px;
-        padding-right: 55px;
+          width: 50%;
+          text-align: right;
+          font-size: 1.6em;
+          line-height: 45px;
+          padding-right: 55px;
         }
         .benefits {
-         
         }
         .benefits__card {
-         width: 25vw;
-         display: flex;
-         flex-direction: column;
-         height: 200px;
+          width: 25vw;
+          display: flex;
+          flex-direction: column;
+          height: 200px;
         }
         .benefits__card:not(:first-child) {
-         
         }
         .benefits__text {
-         text-align: center;
-         height: 50%;
+          text-align: center;
+          height: 50%;
         }
         .benefits__text--paragraph {
-        
         }
-        .benefits__icon{
-            margin: 0 auto;
-            height: 50%;
-            display: flex;
-            align-items: center;
+        .benefits__icon {
+          margin: 0 auto;
+          height: 50%;
+          display: flex;
+          align-items: center;
         }
         .benefits__icon--image {
-         width: 6vw;
+          width: 6vw;
         }
-
-            }
+      }
     </style>
   </head>
   <body>
@@ -473,7 +527,7 @@
       </div>
       <div class="header__picture">
         <img
-          src="/picture/ludzik34 (1).png"
+          src="/picture/Zasób 24.png"
           alt=""
           class="header__picture--image"
         />
@@ -482,7 +536,7 @@
     <div id="goal" class="goal">
       <div class="goal__picture">
         <img
-          src="/picture/ludzik34 (1).png"
+          src="/picture/nowy ludzik.png"
           alt=""
           class="goal__picture--image"
         />
@@ -593,6 +647,29 @@
             Działalności Gospodarczej
           </p>
         </div>
+      </div>
+    </div>
+    <div class="subscribe">
+      <div class="subscribe__title">
+        Skontaktuj się z nami
+      </div>
+      <div class="subscribe__contener">
+        <form
+          class="subscribe__contener--form"
+          action="https://formspree.io/piotrpoczwardowski@gmail.com"
+          method="POST"
+        >
+        <div class="subscribe__contener--inputs">
+          <input type="text" placeholder="name" name="name" />
+          <input type="text" placeholder="surname" name="surname" />
+          <input type="text" placeholder="email" name="email" />
+          <input type="text" placeholder="number" name="number" />
+        </div>
+        <div class="subscribe__contener--message">
+            <input type="text" placeholder="message" name="message" />
+        </div>
+        <button class="subscribe__contener--button">Wyślij</button>
+        </form>
       </div>
     </div>
     <script>
