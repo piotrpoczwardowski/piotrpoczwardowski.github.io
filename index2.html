@@ -31,17 +31,104 @@
         .navigation {
           background: #999;
         }
+        .navigation__logo{
+            text-align: center;
+          
+            
+        }
         .navigation__logo--image{
-            width: 35vh;
+           width: 90vw;
+           margin-top: 10px;
+         
+         
+        }
+        .navigation__buttons{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            padding-bottom: 10px; 
+           
+        }
+        .navigation__button a{
+            text-decoration: none;
+            color: white;
+            font-size: 5vw;
         }
         .header {
           background: #666;
+          display: flex;
+          flex-direction: column-reverse;
+        
+        }
+
+        .header__text{
+            text-align: center;
+            font-size: 5vw;
+        }
+        .header__text--element{
+            margin-top: 15px;
+            
+        }
+        .header__text--title{
+            font-size: 10vw;
+        }
+        .header__text--button{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid black;
+            width: 70vw;
+            height: 30px;
+            margin-top: 25px;
+            margin-left:  auto;
+            margin-right:  auto;
+        }
+        .header__picture{
+            text-align: center;
+        }
+        .header__picture--image{
+            width: 70vw;
+            margin-top:20px;
         }
         .goal {
           background: #999;
         }
+        .goal__picture{
+           text-align: center;
+        }
+        .goal__picture--image{
+            width: 70vw;
+            margin-top: 20px;
+        }
+        .goal__text{
+            text-align: center;
+            margin-top: 0px;
+            padding: 20px;
+            font-size: 5vw;
+        }
         .benefits{
-            background: #666
+            background: #666;
+
+        }
+        .benefits__card{
+            background: rgb(226, 225, 225);
+            display: flex;
+            padding: 5px;
+            
+        }
+        .benefits__card:not(:first-child){
+            margin-top: 10px;
+        }
+        .benefits__text{
+            display: flex;
+            align-items: center;
+            font-size: 5vw;
+        }
+        .benefits__text--paragraph{
+           margin-left:15px;
+        }
+        .benefits__icon--image{
+            width: 28vw;
         }
       }
     </style>
@@ -57,7 +144,7 @@
       </div>
       <div class="navigation__buttons">
         <div class="navigation__button navigation__button--goal">
-          <a href="goal"></a>Cel
+          <a href="goal">Cel</a>
         </div>
         <div class="navigation__button navigation__button--benefits">
           <a href="benefits">Korzyści</a>
@@ -69,17 +156,17 @@
     </div>
     <div class="header">
       <div class="header__text">
-        <p class="header__text--title">
+        <p class="header__text--element header__text--title">
           Załóż swoją firmę <br />
           <strong>za darmo!</strong>
         </p>
-        <p class="header__text--subtitle">
+        <p class="header__text--element header__text--subtitle">
           Profesjonalna pomoc w założeniu<br />
           firmy bez wychodzenia z domu.<br />
           Krok po kroku pomożemy Tobie<br />
           załatwić wszelkie formalności.
         </p>
-        <div class="header__text--button">
+        <div class="header__text--element header__text--button">
           <p class="header__button--text">Sprawdź nas</p>
           <p class="header__button--icon">
             <i
@@ -89,11 +176,13 @@
           </p>
         </div>
       </div>
-      <div class="header__picture"></div>
+      <div class="header__picture">
+          <img src="/picture/ludzik34 (1).png" alt="" class="header__picture--image">
+      </div>
     </div>
     <div class="goal">
       <div class="goal__picture">
-        <img src="" alt="" class="goal__picture--image" />
+        <img src="http://placehold.jp/500x500.png" alt="" class="goal__picture--image" />
       </div>
       <div class="goal__text">
         <p class="goal__text--paragraph">
