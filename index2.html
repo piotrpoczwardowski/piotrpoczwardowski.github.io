@@ -26,109 +26,137 @@
       body {
         font-family: "Source Sans Pro";
       }
+      .navigation__logo--image, .navigation__button, .header__picture--image, .header__text--element, .goal__picture--image, .goal__text {
+        transform: translateY(50px);
+          opacity: 0;
+          transition: all 1s;
+      }
+
+      .benefits__card{
+        transform: translateY(50px);
+          opacity: 0;
+          transition: all 1s;
+      }
+
+      @keyframes arrow {
+        0% {
+          transform: translateX(-10px);
+        }
+        50% {
+          transform: translateX(5px);
+        }
+        100% {
+          transform: translateX(-10px);
+        }
+      }
 
       @media (min-width: 250px) {
         .navigation {
           background: #999;
         }
-        .navigation__logo{
-            text-align: center;
+        .navigation__logo {
+          text-align: center;
+        }
+        .navigation__logo--image {
+          width: 90vw;
+          margin-top: 10px;
           
-            
         }
-        .navigation__logo--image{
-           width: 90vw;
-           margin-top: 10px;
-         
+        .navigation__button{
          
         }
-        .navigation__buttons{
-            display: flex;
-            justify-content: space-around;
-            margin-top: 10px;
-            padding-bottom: 10px; 
-           
+        .navigation__buttons {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 10px;
+          padding-bottom: 10px;
         }
-        .navigation__button a{
-            text-decoration: none;
-            color: white;
-            font-size: 5vw;
+        .navigation__button a {
+          text-decoration: none;
+          color: white;
+          font-size: 5vw;
         }
         .header {
           background: #666;
           display: flex;
           flex-direction: column-reverse;
-        
         }
 
-        .header__text{
-            text-align: center;
-            font-size: 5vw;
+        .header__text {
+          text-align: center;
+          font-size: 5vw;
         }
-        .header__text--element{
-            margin-top: 15px;
-            
+        .header__text--element {
+          margin-top: 15px;
+         
         }
-        .header__text--title{
-            font-size: 10vw;
+        .header__text--title {
+          font-size: 10vw;
         }
-        .header__text--button{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            border: 1px solid black;
-            width: 70vw;
-            height: 30px;
-            margin-top: 25px;
-            margin-left:  auto;
-            margin-right:  auto;
+        .header__text--button {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border: 1px solid black;
+          width: 50vw;
+          height: 45px;
+          margin-top: 25px;
+          margin-left: auto;
+          margin-right: auto;
         }
-        .header__picture{
-            text-align: center;
+        .header__button--icon {
+          animation-name: arrow;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
         }
-        .header__picture--image{
-            width: 70vw;
-            margin-top:20px;
+        .header__picture {
+          text-align: center;
+        }
+        .header__picture--image {
+          width: 70vw;
+          margin-top: 20px;
+          
         }
         .goal {
           background: #999;
         }
-        .goal__picture{
-           text-align: center;
+        .goal__picture {
+          text-align: center;
         }
-        .goal__picture--image{
-            width: 70vw;
-            margin-top: 20px;
+        .goal__picture--image {
+          width: 70vw;
+          margin-top: 20px;
         }
-        .goal__text{
-            text-align: center;
-            margin-top: 0px;
-            padding: 20px;
-            font-size: 5vw;
+        .goal__text {
+          text-align: center;
+          margin-top: 0px;
+          padding: 20px;
+          font-size: 5vw;
         }
-        .benefits{
-            background: #666;
-
+        .benefits {
+          background: #666;
         }
-        .benefits__card{
-            background: rgb(226, 225, 225);
-            display: flex;
-            padding: 5px;
-            
+        .benefits__card {
+          background: rgb(226, 225, 225);
+          display: flex;
+          padding: 5px;
+          width: 90vw;
+          margin-left: auto;
+          margin-right: auto;
         }
-        .benefits__card:not(:first-child){
-            margin-top: 10px;
+        .benefits__card:not(:first-child) {
+          margin-top: 10px;
         }
-        .benefits__text{
-            display: flex;
-            align-items: center;
-            font-size: 5vw;
+        .benefits__text {
+          display: flex;
+          align-items: center;
+          font-size: 5vw;
         }
-        .benefits__text--paragraph{
-           margin-left:15px;
+        .benefits__text--paragraph {
+          margin-left: 15px;
         }
-        .benefits__icon--image{
-            width: 28vw;
+        .benefits__icon--image {
+          width: 28vw;
         }
       }
     </style>
@@ -144,10 +172,10 @@
       </div>
       <div class="navigation__buttons">
         <div class="navigation__button navigation__button--goal">
-          <a href="goal">Cel</a>
+          <a href="#goal">Cel</a>
         </div>
         <div class="navigation__button navigation__button--benefits">
-          <a href="benefits">Korzyści</a>
+          <a href="#benefits">Korzyści</a>
         </div>
         <div class="navigation__button navigation__button--subscribe">
           <a href="subscribe">Zapisz się</a>
@@ -177,14 +205,22 @@
         </div>
       </div>
       <div class="header__picture">
-          <img src="/picture/ludzik34 (1).png" alt="" class="header__picture--image">
+        <img
+          src="/picture/ludzik34 (1).png"
+          alt=""
+          class="header__picture--image"
+        />
       </div>
     </div>
-    <div class="goal">
+    <div id='goal' class="goal">
       <div class="goal__picture">
-        <img src="http://placehold.jp/500x500.png" alt="" class="goal__picture--image" />
+        <img
+          src="http://placehold.jp/500x500.png"
+          alt=""
+          class="goal__picture--image"
+        />
       </div>
-      <div class="goal__text">
+      <div  class="goal__text">
         <p class="goal__text--paragraph">
           Celem Projektu Łatwy Start jest wspieranie przyszłych przedsiębiorców
           w prowadzeniu firm. Projekt jest dedykowany osobom planującym
@@ -194,7 +230,7 @@
         </p>
       </div>
     </div>
-    <div class="benefits">
+    <div id='benefits' class="benefits">
       <div class="benefits__card">
         <div class="benefits__icon">
           <img src="/icons/Zasób 0.png" alt="" class="benefits__icon--image" />
@@ -292,6 +328,34 @@
         </div>
       </div>
     </div>
-    <script></script>
+    <script>
+      let firstVisible = document.querySelectorAll(
+        ".navigation__logo--image, .navigation__button, .header__picture--image, .header__text--element "
+      );
+      let visibleOnScrollEl = document.querySelectorAll('.goal__picture--image, .goal__text')
+        let cards = document.querySelectorAll('.benefits__card')
+    window.onload = function(){
+        firstVisible.forEach(function(el){
+            Object.assign(el.style,{opacity: 1}, {transform: 'translateY(0px)'})
+        })
+    }
+
+    window.addEventListener('scroll', function(){
+        visibleOnScrollEl.forEach(function(el){
+            appearingOnScroll(el)
+        })
+        cards.forEach(function(el){
+            appearingOnScroll(el)
+        })
+    })
+
+ function appearingOnScroll(el) {
+        if (window.scrollY > el.getBoundingClientRect().y) {
+        
+            Object.assign(el.style,{opacity: 1}, {transform: 'translateY(0px)'})
+        }
+      }
+
+    </script>
   </body>
 </html>
