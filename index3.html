@@ -134,7 +134,7 @@
           text-align: center;
         }
         .header__picture--image {
-          width: 70vw;
+          width: 60vw;
           margin-top: 20px;
         }
         .goal {
@@ -259,6 +259,10 @@
         .goal__picture--image {
           width: 60vw;
         }
+        .header__picture--image {
+          width: 50vw;
+         
+        }
         .benefits__icon--image {
           width: 16vw;
         }
@@ -296,9 +300,14 @@
           margin-top: 20px;
           margin-left: 0;
         }
+
         .header__picture--image,
         .goal__picture--image {
           width: 45vw;
+        }
+        .header__picture--image {
+          width: 40vw;
+          margin-top: 20px;
         }
         .goal {
           display: flex;
@@ -355,6 +364,10 @@
         .goal__picture--image {
           width: 40vw;
         }
+        .header__picture--image {
+          width: 35vw;
+       
+        }
         .header__text--button {
           width: 17vw;
           margin-top: 20px;
@@ -381,6 +394,10 @@
         .header__picture--image,
         .goal__picture--image {
           width: 35vw;
+        }
+        .header__picture--image {
+          width: 30vw;
+          
         }
         .navigation__buttons {
           width: 40vw;
@@ -454,8 +471,14 @@
         </div>
       </div>
       <div class="header__picture">
+          <img src="/papers/lefttop.png" alt="" class="paper paper1">
+          <img src="/papers/leftmid.png" alt="" class="paper paper2">
+          <img src="/papers/leftbot.png" alt="" class="paper paper3">
+          <img src="" alt="" class="paper paper4">
+          <img src="" alt="" class="paper paper5">
+          <img src="" alt="" class="paper paper6">
         <img
-          src="/picture/Zasób 24.png"
+          src="/papers/Zasób 17.png"
           alt=""
           class="header__picture--image"
         />
@@ -609,11 +632,11 @@
       );
       let cards = document.querySelectorAll(".benefits__card");
       let headerImage = document.querySelector('.header__picture--image')
-      if (window.innerWidth > 1100) {
-        console.log("fdsf");
-        headerImage.src = '/papers/Zasób 17.png'
-        headerImage.style.width = '30vw'
-      }
+    //   if (window.innerWidth > 1100) {
+    //     console.log("fdsf");
+    //     headerImage.src = '/papers/Zasób 17.png'
+    //     headerImage.style.width = '30vw'
+    //   }
 
       window.onload = function() {
         firstVisible.forEach(function(el) {
