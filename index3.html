@@ -106,6 +106,7 @@
           font-size: 1em;
         }
         .header__text--button {
+            
           display: flex;
           justify-content: space-around;
           align-items: center;
@@ -118,6 +119,10 @@
           color: white;
           font-size: 1em;
           background: linear-gradient(rgb(0, 29, 196), rgb(92, 113, 230));
+        }
+        .header__text--button a{
+            text-decoration: none;
+            color: white;
         }
         .header__button--icon {
           animation-name: arrow;
@@ -247,160 +252,162 @@
           font-size: 22px;
         }
         .navigation__logo--image {
-            width: 60vw;
+          width: 60vw;
         }
 
-        .header__picture--image, .goal__picture--image{
-            width: 60vw;
+        .header__picture--image,
+        .goal__picture--image {
+          width: 60vw;
         }
         .benefits__icon--image {
           width: 16vw;
         }
       }
 
-        @media (min-width: 800px) {
-            body {
+      @media (min-width: 800px) {
+        body {
           font-size: 20px;
         }
-            .navigation{
-                display: flex;
-            }
-            .navigation__logo--image {
-            width: 40vw;
+        .navigation {
+          display: flex;
         }
-        .navigation__buttons{
-            width: 60vw;
-            align-items: center;
+        .navigation__logo--image {
+          width: 40vw;
         }
-        .header{
-            flex-direction: row;
-            justify-content: center;
+        .navigation__buttons {
+          width: 60vw;
+          align-items: center;
         }
-        
-        .header__text--title{
-            text-align: left;
-           
-        }
-        .header__text--subtitle{
-            text-align: left;
-            margin: 0;
-            margin-top: 20px;
-        }
-        .header__text--button{
-            
-            width: 20vw;
-            margin-top: 20px;
-            margin-left: 0;
-        }
-        .header__picture--image, .goal__picture--image{
-            width: 45vw;
-        }
-        .goal{
-            display: flex;
-        }
-        .goal__text{
-            display: flex;
-            align-items: center;
-            text-align: right;
-            line-height: 33px;
-        }
-        .benefits{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .benefits__card{
-            width: 45vw;
-        }
-        .benefits__icon{
-            display: flex;
-            align-items: center;
-        }
-        .benefits__icon--image {
-          width: 10vw;
-        }
-       .subscribe__contener{
-           width: 95vw;
-           padding-top: 10px;
-       }
-       .subscribe__contener--inputs input{
-           width: 45vw;
-           margin-top: 50px;
-       }
-       .subscribe__contener--inputs input:nth-child(2n){
-           margin-left: 13px;
-       }
-       .subscribe__contener--inputs{
-           display: flex;
-           flex-wrap: wrap;
-       }
-       .subscribe__contener--message input{
-           width: 91vw;
-       }
-        }
-        @media (min-width: 990px) {
-            .header{
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        .header__text{
-            margin-top: 20px;
-            margin-left: 0px;
-            
-        }
-        .header__picture--image, .goal__picture--image{
-            width: 40vw;
-        }
-        .header__text--button{
-            
-            width: 17vw;
-            margin-top: 20px;
-            margin-left: 0;
-        }
-        .goal{
-            justify-content: space-around;
-        }
-        .goal__text{
-            width: 40vw;
-            
-        }
-        .benefits__icon--image {
-          width: 10vw;
-        }
+        .header {
+          flex-direction: row;
+          justify-content: center;
         }
 
-         @media (min-width: 1200px) {
-             body{
-                 font-size: 23px;
-             }
-             .navigation__logo--image{
-                 width: 35vw;
-             }
-             .header__picture--image, .goal__picture--image{
-            width: 35vw;
+        .header__text--title {
+          text-align: left;
         }
-        .navigation__buttons{
-            width: 40vw;
+        .header__text--subtitle {
+          text-align: left;
+          margin: 0;
+          margin-top: 20px;
         }
-       .header__text--button{
-           margin-top: 26px;
-           width: 12vw;
-       }
-        .header__text{
-           
-            margin-left: -50px;
-            
+        .header__text--button {
+          width: 20vw;
+          margin-top: 20px;
+          margin-left: 0;
         }
-        .goal__text{
-            line-height: 45px;
+        .header__picture--image,
+        .goal__picture--image {
+          width: 45vw;
         }
-        .benefits__card{
-            width: 30vw;
-            height: 150px
+        .goal {
+          display: flex;
+        }
+        .goal__text {
+          display: flex;
+          align-items: center;
+          text-align: right;
+          line-height: 33px;
+        }
+        .benefits {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .benefits__card {
+          width: 45vw;
+        }
+        .benefits__icon {
+          display: flex;
+          align-items: center;
+        }
+        .benefits__icon--image {
+          width: 10vw;
+        }
+        .subscribe__contener {
+          width: 95vw;
+          padding-top: 10px;
+        }
+        .subscribe__contener--inputs input {
+          width: 45vw;
+          margin-top: 50px;
+        }
+        .subscribe__contener--inputs input:nth-child(2n) {
+          margin-left: 13px;
+        }
+        .subscribe__contener--inputs {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .subscribe__contener--message input {
+          width: 91vw;
+        }
+      }
+      @media (min-width: 990px) {
+        .header {
+          flex-direction: row;
+          justify-content: space-around;
+        }
+        .header__text {
+          margin-top: 20px;
+          margin-left: 0px;
+        }
+        .header__picture--image,
+        .goal__picture--image {
+          width: 40vw;
+        }
+        .header__text--button {
+          width: 17vw;
+          margin-top: 20px;
+          margin-left: 0;
+        }
+        .goal {
+          justify-content: space-around;
+        }
+        .goal__text {
+          width: 40vw;
+        }
+        .benefits__icon--image {
+          width: 10vw;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        body {
+          font-size: 23px;
+        }
+        .navigation__logo--image {
+          width: 35vw;
+        }
+        .header__picture--image,
+        .goal__picture--image {
+          width: 35vw;
+        }
+        .navigation__buttons {
+          width: 40vw;
+        }
+        .header__text--button {
+          margin-top: 26px;
+          width: 12vw;
+        }
+        .header{
+            height: 500px;
+            align-items: center;
+        }
+        .header__text {
+            margin-top: 0px;
+          margin-left: -50px;
+        }
+        .goal__text {
+          line-height: 45px;
+        }
+        .benefits__card {
+          width: 30vw;
+          height: 150px;
         }
         .benefits__icon--image {
           width: 7vw;
         }
-         }
+      }
     </style>
   </head>
   <body>
@@ -420,7 +427,7 @@
           <a href="#benefits">Korzyści</a>
         </div>
         <div class="navigation__button navigation__button--subscribe">
-          <a href="subscribe">Zapisz się</a>
+          <a href="#subscribe">Zapisz się</a>
         </div>
       </div>
     </div>
@@ -437,7 +444,7 @@
           załatwić wszelkie formalności.
         </p>
         <div class="header__text--element header__text--button">
-          <p class="header__button--text">Sprawdź nas</p>
+          <p class="header__button--text"><a href="#subscribe">Sprawdź nas</a> </p>
           <p class="header__button--icon">
             <i
               class="fa fa-angle-right	
@@ -570,7 +577,7 @@
         </div>
       </div>
     </div>
-    <div class="subscribe">
+    <div id='subscribe' class="subscribe">
       <div class="subscribe__title">
         Skontaktuj się z nami
       </div>
@@ -601,6 +608,13 @@
         ".goal__picture--image, .goal__text"
       );
       let cards = document.querySelectorAll(".benefits__card");
+      let headerImage = document.querySelector('.header__picture--image')
+      if (window.innerWidth > 1100) {
+        console.log("fdsf");
+        headerImage.src = '/papers/Zasób 17.png'
+        headerImage.style.width = '30vw'
+      }
+
       window.onload = function() {
         firstVisible.forEach(function(el) {
           Object.assign(
