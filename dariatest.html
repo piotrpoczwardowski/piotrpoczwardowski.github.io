@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Darix</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+.parent {
+    background: grey;
+    height: 200px;
+    width: 100%;
+}
+.child { background: hotpink;
+height: inherit;
+width: 20%; 
+transition: all 5s;
+}
+
+.child:hover{
+    padding-left: 500px;
+    background: chartreuse;
+}
+     
+    </style>
+  </head>
+
+  <body>
+   <div class="parent">
+       <div class="child"></div>
+
+
+   </div>
+  </body>
+</html>
