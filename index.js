@@ -2,7 +2,7 @@ let firstVisible = document.querySelectorAll(
     ".navigation__logo--image, .navigation__button, .header__picture--image, .header__text--element "
   );
   let visibleOnScrollEl = document.querySelectorAll(
-    ".goal__picture--image, .goal__text"
+    ".goal__picture--image, .goal__text, .subscribe__title, .subscribe__contener"
   );
   let cards = document.querySelectorAll(".benefits__card");
   let headerImage = document.querySelector(".header__picture--image");
