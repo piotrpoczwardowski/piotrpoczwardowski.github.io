@@ -1,19 +1,31 @@
-{get(processObject, 'facts.additional', []).length > 0 ? (
-              <div className="auctionFacts__column">
-                <h3 className="auctionFacts__heading">
-                  {i18n.gettext('Technical data')}
-                </h3>
-                <ul className="auctionFacts__list">
-                  {processObject.facts.additional
-                    .filter(fact => fact.key !== 'TOWBAR')
-                    .map(fact => (
-                      <li className="auctionFacts__item" key={fact.key}>
-                        <p className="auctionFacts__label">{fact.text}</p>
-                        <p className="auctionFacts__value">
-                          {this.formatFact(fact)}
-                        </p>
-                      </li>
-                    ))}
-                </ul>
-              </div>
-            ) : null}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .background{
+    height: 200px;
+    background: purple;
+    filter: blur(8px);
+    position: relative;
+    margin-top: 5px;
+  }
+  
+</style>
+<body>
+  <div class="background">
+    
+      
+
+  
+
+  </div>
+  <div class="background">
+
+  </div>
+</body>
+</html>

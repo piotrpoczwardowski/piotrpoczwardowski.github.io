@@ -1,66 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <style>
-    *{
+      * {
         margin: 0;
         padding: 0;
-        
-    }
-
-    body{
-       background: rgb(238, 219, 238);
-    }
-
-    @media (min-width: 250px) {
-        .section{
-            height: 65vw;
-             background-repeat: no-repeat;
-            background-size: 100% 100%;
-
-           margin: 10vw 5vw;
-
-            border-radius: 3px;
-        }
-
-        .header{
-            
-            background-image: url("łatwy_start_kuks_version/notebooks.jpg");
-           
-            
-        }
-
-        .main{
-          
-            background-image: url("łatwy_start_kuks_version/thinkingMan.jpg");
-            
-        }
-
-         .footer{
-          
-          background-image: url("łatwy_start_kuks_version/workingMan.jpg");
-          
       }
 
+      body {
+        background: rgb(238, 219, 238);
+      }
+      .background{
+         
+      }
 
-    }
+      @media (min-width: 250px) {
+
+        .section {
+          height: 65vw;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+
+          margin: 10vw 5vw;
+
+          border-radius: 3px;
+          position: relative;
+          z-index: -10;
+        }
+        .frames{
+            position: absolute;
+            top: 0%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+           
+        }
+
+        .frame{
+
+         position: relative;
+       height: 300px;
        
-    
+         
+
+        }
+        .frame_background{
+            background: rgba(128, 0, 128, 0.671);
+            width: 90vw;
+            height: 100px;
+            position: absolute;
+            z-index: -8;
+            filter: blur(10px);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+           
+        }
+        .frame_text{
+           
+            width: 80vw;
+            height: 100px;
+            position: absolute;
+            top: 18px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            
+           
+            
+           
+        }
+
+        .header {
+          background-image: url("łatwy_start_kuks_version/notebooks.jpg");
+        }
+
+        .main {
+          background-image: url("łatwy_start_kuks_version/thinkingMan.jpg");
+        }
+
+        .footer {
+          background-image: url("łatwy_start_kuks_version/workingMan.jpg");
+        }
+      }
     </style>
-</head>
-<body>
-   <header class='section header'>
-   
-   </header>
-   <main class='section main'>
-
-   </main>
-   <footer class='section footer'>
-
-   </footer>
-</body>
+  </head>
+  <body>
+    <div class="background">
+      <header class="section header"></header>
+      <main class="section main"></main>
+      <footer class="section footer"></footer>
+    </div>
+    <div class="frames">
+      <div class="frame">
+       
+        <div class="frame_background">
+         
+        </div>
+        <div class="frame_text">
+                Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
+                przemywszy użyty w XV w. przez nieznanego drukarza do wypełnienia
+                tekstem próbnej książki. Pięć
+          </div>
+      </div>
+      <div class="frame">
+       
+            <div class="frame_background">
+             
+            </div>
+            <div class="frame_text">
+                    Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
+                    przemywszy użyty w XV w. przez nieznanego drukarza do wypełnienia
+                    tekstem próbnej książki. Pięć
+              </div>
+          </div>
+          <div class="frame">
+       
+                <div class="frame_background">
+                 
+                </div>
+                <div class="frame_text">
+                        Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
+                        przemywszy użyty w XV w. przez nieznanego drukarza do wypełnienia
+                        tekstem próbnej książki. Pięć
+                  </div>
+              </div>
+      <!-- <div class="frame">
+        <p class="frame__text">
+          Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
+          przemyślerwszy użyty w XV w. przez nieznanego drukarza do wypełnienia
+          tekstem próbnej książki. Pięć
+        </p>
+      </div>
+      <div class="frame">
+        <p class="frame__text">
+          Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
+          przemyśle poligraficznyszy użyty w XV w. przez nieznanego drukarza do
+          wypełnienia tekstem próbnej książki. Pięć
+        </p>
+      </div>
+      <div class="frame">
+        <p class="frame__text">
+          Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
+          przemyś Został po raz pierwszy użyty w XV w. przez nieznanego drukarza
+          do wypełnienia tekstem próbnej książki. Pięć
+        </p>
+      </div>
+      <div class="frame">
+        <p class="frame__text">
+          Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
+          przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez
+          nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć um
+          jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle
+          poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego
+          drukarza do wypełnienia tekst
+        </p>
+      </div>
+      <div class="frame">
+        <p class="frame__text">
+          Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
+          przemyś Został po raz pierwszy użyty w XV w. przez nieznanego drukarza
+          do wypełnienia tekstem próbnej książki. Pięć
+        </p>
+      </div> -->
+    </div>
+  </body>
 </html>
