@@ -13,24 +13,32 @@
       }
 
       body {
-        background: rgb(238, 219, 238);
+        background: white;
         font-family: 'Lato', sans-serif;
       }
       .background {
+        position: fixed;
+         width: 100%;
+        
       }
 
       @media (min-width: 250px) {
+        .background{
+        
+
+        }
         .section {
+         
           height: 65vw;
           background-repeat: no-repeat;
           background-size: 100% 100%;
-
+  
           border-radius: 3px;
-          position: relative;
-          z-index: -10;
+        
+         
         }
         .section:not(:nth-child(1)) {
-          margin-top: 80vw;
+          margin-top: 10vw;
         }
 
         .header {
@@ -46,20 +54,20 @@
         }
 
         .frame {
-          background: rgba(0, 0, 0, 0.658);
+          background: rgba(0, 0, 0, 0.527);
           color: white;
           text-align: center;
-          border-radius: 5px;
-          width: 250px;
+          
+          width: 90%;
           margin: 0 auto;
-          padding: 8px;
+          padding: 8px 20px;
         }
         .frame:not(:nth-child(1)) {
           margin-top: 50px;
         }
         .frames {
           position: absolute;
-          top: 5%;
+          top: 8%;
           left: 0%;
           right: 0%;
           margin: 0 auto;
@@ -134,6 +142,7 @@
           związanych.
         </p>
       </div>
+      
     </div>
   </body>
 </html>
