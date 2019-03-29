@@ -18,11 +18,11 @@
         font-size: 17px;
         
       }
-      .background {
-        
-       
-        
-      }
+      .frame{
+        opacity: 0;
+        transform: translateY(-50px);
+        transition: all 1s;
+    }
 
       @media (min-width: 250px) {
         .background{
@@ -180,5 +180,31 @@
       </div>
       
     </div>
+    <script>
+        let frames = document.querySelectorAll('.frame')
+        let firstFrame = document.querySelector('.frame:first-child')
+        window.onload = function() {
+            Object.assign(
+            firstFrame.style,
+            { opacity: 1 },
+            { transform: "translateY(0px)" }
+          );
+      };
+        window.addEventListener("scroll", function() {
+            frames.forEach(function(el){
+            appearingOnScroll(el)
+        })
+      });
+       
+        function appearingOnScroll(el) {
+        if (window.scrollY > el.getBoundingClientRect().y) {
+          Object.assign(
+            el.style,
+            { opacity: 1 },
+            { transform: "translateY(0px)" }
+          );
+        }
+      }
+        </script>
   </body>
 </html>
