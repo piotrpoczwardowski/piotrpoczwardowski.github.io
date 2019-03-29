@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+       
+        font-family: 'Lato', sans-serif;
+        font-size: 17px;
+        
+      }
+      .background {
+        
+       
+        
+      }
+
+      @media (min-width: 250px) {
+        .background{
+           
+          position: fixed;
+         width: 100%;
+         height: 100vh;;
+        }
+        .section {
+         
+          height: 65vw;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+  
+          border-radius: 3px;
+        
+         
+        }
+        .section:not(:nth-child(1)) {
+          margin-top: 5vw;
+        }
+
+        .header {
+          background-image: url("łatwy_start_kuks_version/notebooks.jpg");
+        }
+
+        .main {
+          background-image: url("łatwy_start_kuks_version/thinkingMan.jpg");
+        }
+
+        .footer {
+          background-image: url("łatwy_start_kuks_version/workingMan.jpg");
+        }
+
+        .frame {
+            background-image: linear-gradient(to top,
+             #910768ab,
+              #720463af,
+               #52055cb4,
+                #310652b0,
+                 #0a0446b7);
+           
+          color: white;
+          text-align: center;
+          border-radius: 5px;
+          width: 100%;
+          margin: 0 auto;
+         padding: 10px;
+         box-sizing: border-box;
+        }
+        .frame:not(:first-child) {
+          margin-top: 20vw;
+        }
+        .frame:last-child{
+          margin-bottom: 20vw
+        }
+        .frames {
+          position: absolute;
+          top: 9%;
+          left: 0%;
+          right: 0%;
+          margin: 0 auto;
+        }
+        .frame__text{
+         
+        }
+        .frame__text--paragraph{
+
+        }
+        .frame__text--paragraph:not(:first-child){
+          margin-top: 10px;
+          
+         
+        }
+      }
+      @media (min-width: 573px) {
+        body{
+          font-size: 1.4em;
+        }
+        .frame:not(:first-child) {
+          margin-top: 30vw;
+        }
+        .frame:last-child{
+          margin-bottom: 30vw
+        }
+      }
+
+        @media (min-width: 1000px) {
+          .background{
+            position: static
+          }
+          .section:not(:nth-child(1)) {
+          margin-top: 20vw;
+        }
+        .frame {
+          width: 50vw;
+          padding: 10px;
+        }
+          .frame:not(:first-child) {
+          margin-top: 20vw;
+        }
+        .frame:last-child{
+          margin-bottom: 30vw
+        }
+        }
+
+           @media (min-width: 1200px) {
+               body{
+                   font-size: 1.8em;
+               }
+          .background{
+            position: static
+          }
+          .section:not(:nth-child(1)) {
+          margin-top: 5vw;
+        }
+        .frames{
+            margin-top: 10vw;
+        }
+        .frame {
+          width: 60vw;
+          padding: 30px;
+        }
+          .frame:not(:first-child) {
+          margin-top: 15vw;
+        }
+        .frame:last-child{
+          margin-bottom: 0vw
+        }
+        }
+     
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <header class="section header"></header>
+      <main class="section main"></main>
+      <footer class="section footer"></footer>
+    </div>
+    <div class="frames">
+      <div class="frame">
+        <p class="frame__text">
+          Zapraszamy Cię na szkolenie podczas, którego przygotujemy Cię do
+          prowadzenia własnego biznesu w sposób bezproblemowy, jasny i
+          zrozumiały.
+        </p>
+      </div>
+      <div class="frame">
+        <p class="frame__text">
+          Nasze darmowe szkolenie przeprowadzi Cię przez każdy etap
+          rejestrowania jednoosobowej działalności gospodarczej oraz przygotuje
+          do podjęcia odpowiednich dla Ciebie decyzji.
+        </p>
+      </div>
+      <div class="frame">
+        <p class="frame__text">
+          Zapisz się już dziś! Przygotuj się merytorycznie i oszczędź sobie
+          rozsterek w przyszłości!
+        </p>
+      </div>
+      <div class="frame">
+        <p class="frame__text">
+         Celem Projektu Łatwy Start/Programu Świadomy Przedsiębiorca jest wspieranie przyszłych przedsiębiorców w prowadzeniu Firm. <br>
+         Projekt jest dedykowany osobom planującym założenie swojej pierwszej działalności gospodarczej,
+         które poszukują podstawowej wiedzy na temat zakładania i prowadzenia działalności w Polsce
+        </p>
+      </div>
+      <div class="frame">
+        <p class="frame__text">
+          <p class="frame__text--paragraph">Na szkoleniu dowiedz się m.in.: </p>
+          <p class="frame__text--paragraph">Co to PKD i jak je wybrać?</p>
+          <p class="frame__text--paragraph">Jak wypełnić dokumenty rejestracyjne do Urzedu Miasta i Gminy?</p>
+          <p class="frame__text--paragraph">Która forma rozliczenia podatkowego będzie dla Ciebie najlepsza?</p>
+          <p class="frame__text--paragraph">Jak wybrać najoptymalniejszy okreś rozliczeniowy?</p>
+          <p class="frame__text--paragraph">Jak wybrać odpowiednie biuro rachunkowe dla swojej firmy?</p>
+          <p class="frame__text--paragraph">Omówimy z Tobą opymalizację kosztów prowadzenia Twojej działalności oraz strategię budowania wiarygodności finansowej.</p>
+          <p class="frame__text--paragraph">Pomożemy Ci podjąć decyzje w zakresie zostania płatnikiem VAT u</p>
+          <p class="frame__text--paragraph">Poznasz podstawowe terminy księgowe.</p>
+          <p class="frame__text--paragraph">Dowiesz się jak najlepiej wykorzystać "Ulgi Na Start"</p>
+          <p class="frame__text--paragraph">Oraz wiele, wiele innych...</p>
+        </p>
+      </div>
+      <div class="frame">
+        <p class="frame__text">
+          No dobrze ale ile kosztuje szkolenie? Szkolenie jest finansowane z
+          środków własnych Projektu Łatwy Start/ Programu Świadomy
+          Przedsiębiorca. Co oznacza, że nie ponosisz żadnych kosztów z nim
+          związanych.
+        </p>
+      </div>
+      
+    </div>
+  </body>
+</html>
