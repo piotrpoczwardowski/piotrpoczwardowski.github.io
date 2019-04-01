@@ -7,19 +7,12 @@
     <title>Document</title>
   </head>
   <style>
-    body{
-      height: 3000px;
-    }
-   
-    img {
-      width: auto;
-      height: 300px;
-      transition: all 3s;
-    }
+    
 
-    img:hover{
-      transform: rotate(90deg);
-      margin-left: 100px;
+    .daria{
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
     }
 
     
@@ -27,8 +20,23 @@
   </style>
   <body>
   
-      <img src="/1775117_1 (1).jpg" alt="" />
+    
+      <img class='daria' src="/16195071_1299962430060451_2083473692518579400_n.jpg" alt="">
+    
+      <script>
 
+        let daria = document.querySelector('.daria')
+     window.addEventListener('mousemove', function(e){
+
+      
+       let x = e.clientX
+       let y = e.clientY
+       console.log(y)
+       daria.style.marginTop = y + 'px';
+       daria.style.marginLeft = x + 'px';
+     })
+      
+      </script>
   
    
 
