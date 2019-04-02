@@ -39,7 +39,14 @@
           border-radius: 20px;
           color: white;
           font-size: 20px;
+          box-shadow: -5px 5px 10px black ;
+          animation-name: button;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;          
+          
+          
       }
+    
       .main__right {
         background: url("/1775117_1 (1).jpg");
         background-size: contain;
@@ -47,7 +54,26 @@
         background-position-x: center;
         width: 50%;
       }
-      
+
+      @keyframes button{
+        
+          50%{
+            box-shadow: -10px 10px 25px black;
+            transform: translate(10px, -10px) ;
+           
+
+
+           
+          }
+         
+      }
+
+      @keyframes colors{
+          50%{
+              color: red;
+          }
+      }
+    
     </style>
   </head>
   <body>
