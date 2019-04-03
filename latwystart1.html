@@ -12,11 +12,15 @@
       margin: 0;
       padding: 0;
     }
-
+    
+    
     body {
       background: rgb(255, 255, 255);
-      transition: all 2s;
+    
       font-family: fieldwork, sans-serif;
+    }
+    .content{
+      transition: all 1s;
     }
     hr {
       width: 80%;
@@ -271,6 +275,23 @@
     }
     .modal {
       text-align: center;
+      margin: 0 auto;
+      width: 70%;
+      display: none;
+     
+      animation-name: appear;
+      animation-duration: 1s;
+    }
+    @keyframes appear {
+      0%{
+        opacity: 0;
+        transform: translateY(-50px)
+      }
+
+      100%{
+        opacity: 1;
+        transform: translateY(0px)
+      }
     }
 
     .modal__text {
@@ -289,7 +310,7 @@
       margin: 0 auto;
       width: 80%;
       height: 40px;
-      margin-top: 5px;
+      margin-top: 15px;
       border-radius: 5px;
       box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
     }
@@ -312,124 +333,142 @@
     }
   </style>
   <body>
-    <div class="modal">
-      <div class="modal__text">
-        Witaj! <br />
-        Zostaw swój e-mail. Wkrótce odpowiemy
-      </div>
-      <div class="modal__form">
-        <form
-          action="https://formspree.io/piotrpoczwardowski@gmail.com"
-          method="POST"
-        >
-          <input
-            type="text"
-            placeholder="Imię"
-            name="name"
-            class="form__input"
-          />
-          <input
-            type="text"
-            placeholder="E-mail"
-            name="email"
-            class="form__input"
-          />
-          <button class="modal__button">
-            Wyślij
-          </button>
-        </form>
-      </div>
-     
-    </div>
-    <div class="background">
-      <div class="background__image"></div>
-      <div class="background__blur"></div>
-    </div>
-    <main class="main">
-      <div class="main__logo">
-        PROJEKT ŁATWY START
-        <div class="line line__logo"></div>
-      </div>
-      <h1 class="main__title">
-        Załóż firmę za darmo!
-      </h1>
-      <div class="main__subtitle">
-        Profesjonalna pomoc w założeniu firmy bez wychodzenia z domu.<br />
-        Krok po kroku pomożemy Tobie załatwić wszelkie formalności.
-      </div>
-      <button class="main__button">
-        Zapisz się
-      </button>
-    </main>
-
-    <div class="line line__before"></div>
-    <div class="goal">
-      <h1 class="goal__title">
-        Celem Projektu Łatwy Start jest wspieranie przyszłych przedsiębiorców w
-        prowadzeniu firm.
-      </h1>
-      <div class="goal__subtitle">
-        Projekt jest dedykowany osobom planującym założenie swojej pierwszej
-        działalności gospodarczej, które poszukują podstawowej wiedzy na temat
-        zakładania i prowadzenia działalności w polsce. Zapraszamy Cię na
-        szkolenie podczas, którego przygotujemy Cię do prowadzenia własnego
-        biznesu w sposób bezproblemowy, jasny i zrozumiały.
-      </div>
-    </div>
-    <div class="line line__after"></div>
-    <div class="pains">
-      <h1 class="pains__title">
-        Jeśli chcesz dowiedzieć się:
-      </h1>
-      <div class="pains__frames">
-        <div class="pains__frame">
-          Jaki rodzaj <br />
-          opodatkowania wybrać?
+      <div class="modal">
+          <div class="modal__text">
+            Witaj! <br />
+            Zostaw swój e-mail. Wkrótce odpowiemy
+          </div>
+          <div class="modal__form">
+            <form
+              action="https://formspree.io/piotrpoczwardowski@gmail.com"
+              method="POST"
+            >
+              <input
+                type="text"
+                placeholder="Imię"
+                name="name"
+                class="form__input"
+              />
+              <input
+                type="text"
+                placeholder="E-mail"
+                name="email"
+                class="form__input"
+              />
+              <button class="modal__button">
+                Wyślij
+              </button>
+            </form>
+          </div>
         </div>
-        <div class="pains__frame">
-          Jak zarejestrować <br />
-          firmę w CEIDG-1?
-        </div>
-        <div class="pains__frame">
-          Kiedy najlepiej <br />
-          założyć działalność gospodarczą?
-        </div>
-        <div class="pains__frame">
-          Jakie dokumenty <br />
-          złożyć do ZUS'u?
-        </div>
-        <div class="pains__frame">
-          Jak zarejestrować firmę w urzędzie skarbowym dla celów VAT?
-        </div>
-      </div>
-    </div>
-    <div class="line line__footer"></div>
-    <footer class="footer">
+    <div class="content">
+      
       <div class="background">
         <div class="background__image"></div>
         <div class="background__blur"></div>
       </div>
-      <div class="footer__title">
-        Na te wszystkie pytania i wiele więcej odpowiemy!
+      <main class="main">
+        <div class="main__logo">
+          PROJEKT ŁATWY START
+          <div class="line line__logo"></div>
+        </div>
+        <h1 class="main__title">
+          Załóż firmę za darmo!
+        </h1>
+        <div class="main__subtitle">
+          Profesjonalna pomoc w założeniu firmy bez wychodzenia z domu.<br />
+          Krok po kroku pomożemy Tobie załatwić wszelkie formalności.
+        </div>
+        <button class="main__button">
+          Zapisz się
+        </button>
+      </main>
+
+      <div class="line line__before"></div>
+      <div class="goal">
+        <h1 class="goal__title">
+          Celem Projektu Łatwy Start jest wspieranie przyszłych przedsiębiorców
+          w prowadzeniu firm.
+        </h1>
+        <div class="goal__subtitle">
+          Projekt jest dedykowany osobom planującym założenie swojej pierwszej
+          działalności gospodarczej, które poszukują podstawowej wiedzy na temat
+          zakładania i prowadzenia działalności w polsce. Zapraszamy Cię na
+          szkolenie podczas, którego przygotujemy Cię do prowadzenia własnego
+          biznesu w sposób bezproblemowy, jasny i zrozumiały.
+        </div>
       </div>
-      <button class="footer__button">
-        Zapisz się!
-      </button>
-    </footer>
+      <div class="line line__after"></div>
+      <div class="pains">
+        <h1 class="pains__title">
+          Jeśli chcesz dowiedzieć się:
+        </h1>
+        <div class="pains__frames">
+          <div class="pains__frame">
+            Jaki rodzaj <br />
+            opodatkowania wybrać?
+          </div>
+          <div class="pains__frame">
+            Jak zarejestrować <br />
+            firmę w CEIDG-1?
+          </div>
+          <div class="pains__frame">
+            Kiedy najlepiej <br />
+            założyć działalność gospodarczą?
+          </div>
+          <div class="pains__frame">
+            Jakie dokumenty <br />
+            złożyć do ZUS'u?
+          </div>
+          <div class="pains__frame">
+            Jak zarejestrować firmę w urzędzie skarbowym dla celów VAT?
+          </div>
+        </div>
+      </div>
+      <div class="line line__footer"></div>
+      <footer class="footer">
+        <div class="background">
+          <div class="background__image"></div>
+          <div class="background__blur"></div>
+        </div>
+        <div class="footer__title">
+          Na te wszystkie pytania i wiele więcej odpowiemy!
+        </div>
+        <button class="footer__button">
+          Zapisz się!
+        </button>
+      </footer>
+    </div>
 
     <script>
-      let subscribeButton = document.querySelectorAll('button')
-      let body = document.querySelector('body')
-      let blur = false
+      let subscribeButton = document.querySelectorAll("button");
+      let body = document.querySelector(".content");
+      let blur = false;
+     
+      let modal = document.querySelector('.modal')
 
-      subscribeButton.forEach(function(el){
-        el.addEventListener('click',function(){
+      subscribeButton.forEach(function(el) {
+        el.addEventListener("click", function() {
+          body.style.filter = "blur(6px)";
+          modal.style.display = 'block';
+          blur=true
+          setTimeout(function(){
+            blur = false
+          },1000)
+        });
+      });
 
-          body.style.filter = 'blur(6px)'
-
-        })
-
+      body.addEventListener('click', function(){
+       
+        if(blur){
+          console.log(blur)
+        } else{
+          body.style.filter = "blur(0px)";
+          modal.style.display = 'none';
+        }
       })
+
+      
     </script>
   </body>
 </html>
