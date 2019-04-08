@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .navigation{
+        
+        height: 50px;
+    }
+    .navigation__top{
+        display: flex;
+        justify-content: flex-end;
+        background: #999;
+        height: 50px;
+        align-items: center;
+        padding-right: 30px;
+    }
+    .navigation__bottom{
+        background: #666;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+    .navigation__links{
+        display: flex;
+        align-items: center;
+    }
+   
+    .navigation__link:Not(:last-child){
+        padding-right: 100px;
+      
+        
+
+    }
+    .navigation__link{
+       display: block;
+        text-decoration: none;
+        padding-right: 50px;
+
+    }
+    .navigation__logo img{
+        width: 100px;
+        height: 50px;
+        background: #666;
+    }
+
+    .main{
+        display: flex; 
+        height: 500px;
+        background: #999;
+    }
+  
+    
+    </style>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="navigation__top">
+        <div class="navigation__number">555-555-555</div>
+      </div>
+      <div class="navigation__bottom">
+        <div class="navigation__logo">
+            <img src="/1775117_1 (1).jpg" alt="">
+        </div>
+        <div class="navigation__links">
+          <a href="" class="navigation__link">Home</a>
+          <a href="" class="navigation__link">O nas</a>
+          <a href="" class="navigation__link">Cennik</a>
+          <a href="" class="navigation__link">Kontakt</a>
+         
+        </div>
+      </div>
+      <div class="main">
+       
+      </div>
+    </nav>
+  </body>
+</html>
