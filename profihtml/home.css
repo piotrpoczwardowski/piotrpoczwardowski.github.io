@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation__top{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: flex-end;
+  
+    font-size: 25px;
+  
+}
+.top__links{
+    margin-right: 50px;
+   
+}
+.top__number{
+    background: rgb(55, 135, 226);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.navigation__bottom{
+    display: flex;
+  
+    height: 80px;
+    align-items: center;
+   
+}
+.bottom__logo{
+ width: 30%;
+ display: flex;
+justify-content: center;
+ align-items: center;
+ font-size: 40px;
+ font-weight: bold;
+}
+.bottom__logo img{
+  margin-right:10px;
+}
+.bottom__links{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+
+.bottom__links a{
+    text-decoration: none;
+    color: black;
+}
+.bottom__links a:hover{
+    color: rgb(55, 135, 226);
+}
+a.active{
+    color: rgb(55, 135, 226);
+}
+.background{
+    position: absolute;
+    z-index: -1;
+}
+.background video{
+    width: 100vw;
+   
+}
+.main{
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.582);
+    
+}
+.main__title{
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 80px;
+}
+.main__subtitle{
+    font-size: 30px;
+    margin-top: 30px;
+}
+.main__button{
+    margin-top: 50px;
+    background: rgb(55, 135, 226);
+    border: none;
+    color: white;
+    width: 20%;
+    height: 60px;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 50px;
+
+}
+.bar{
+    background: white;
+    color: rgb(55, 135, 226);
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0;
+}
+.why{
+
+    background: rgb(56, 56, 56);
+    padding-bottom: 80px;
+    font-weight: bold;
+}
+.why__title{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+.why__answers{
+    display: flex;
+    justify-content: space-around;
+}
+
+.answer{
+    
+    width: 25%;
+    text-align: center;
+}
+.answer:not(:last-child){
+    border-right: 3px solid white;
+  
+}
+.answer__icon img{
+    width: 120px;
+    margin-bottom: 10px;
+   
+}
+.answer__text{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    
+   
+}
+
+.offer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.offer__block{
+    width: 50%;
+    height: 350px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    background: blue;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+   
+   
+}
+.offer__block:last-child{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height:250px;
+}
