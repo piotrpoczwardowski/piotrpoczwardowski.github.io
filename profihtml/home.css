@@ -2,30 +2,56 @@
   margin: 0;
   padding: 0;
 }
-body{
+body {
   font-family: forma-djr-display, sans-serif;
   letter-spacing: 2px;
 }
+
+.why__title, .answer__icon, .answer__text, .offer__block,.contact__title, .contact__map, .contact__form{
+transform: translateY(50px);
+opacity: 0;
+transition: all 1s;
+}
+
+@keyframes pump{
+  50%{
+    transform: scale(1.1) rotate(10deg);
+    
+  }
+}
+
+
+
 .navigation__top {
   display: flex;
   height: 50px;
   align-items: center;
   justify-content: flex-end;
-
-  
 }
 .top__links {
-  margin-right: 20px;
+  margin-right: 15px;
 }
-.top__links a{
+.fa {
+  margin-right: 15px;
+}
+.top__links a {
   text-decoration: none;
   color: black;
+  transition: all 0.5s;
+}
+.top__links a:hover {
+  color: rgb(55, 135, 226);
 }
 .top__number {
   background: rgb(55, 135, 226);
   padding: 10px;
   color: white;
   font-weight: bold;
+  transition: all 0.5s;
+}
+
+.top__number:hover {
+  background: rgb(14, 80, 155);
 }
 
 .navigation__bottom {
@@ -39,8 +65,11 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  transition: all 0.5s;
   font-weight: bold;
+}
+.bottom__logo:hover {
+  color: rgb(55, 135, 226);
 }
 .bottom__logo img {
   margin-right: 10px;
@@ -50,12 +79,12 @@ body{
   justify-content: space-around;
   width: 60%;
   font-weight: bold;
-
 }
 
 .bottom__links a {
   text-decoration: none;
   color: black;
+  transition: all 0.5s;
 }
 .bottom__links a:hover {
   color: rgb(55, 135, 226);
@@ -77,12 +106,10 @@ a.active {
   background: rgba(0, 0, 0, 0.582);
 }
 .main__title {
-
   font-weight: bold;
   padding-top: 10%;
 }
 .main__subtitle {
-  
   margin-top: 25px;
 }
 .main__button {
@@ -93,16 +120,22 @@ a.active {
   padding: 10px 20px;
   font-weight: bold;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.548);
-
- 
+  cursor: pointer;
   margin-bottom: 50px;
+}
+.main__button:hover {
+  background: rgb(14, 80, 155);
+  transition: all 0.5s;
 }
 .bar {
   background: white;
   color: rgb(55, 135, 226);
   text-align: center;
- 
+  transition: all 1s;
   padding: 50px 0;
+}
+.bar:hover{
+  color: rgb(14, 80, 155);
 }
 .why {
   background: rgb(56, 56, 56);
@@ -110,7 +143,6 @@ a.active {
   font-weight: bold;
 }
 .why__title {
- 
   color: white;
   text-align: center;
   padding: 40px 0;
@@ -129,11 +161,18 @@ a.active {
 }
 .answer__icon img {
   width: 120px;
+  height: 120px;
   margin-bottom: 10px;
+  
+}
+.answer__icon img:hover{
+  animation-name: pump;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 .answer__text {
   color: white;
-  
+
   display: flex;
   justify-content: center;
   text-align: left;
@@ -152,9 +191,9 @@ a.active {
   box-sizing: border-box;
   display: flex;
   align-items: flex-end;
-  
+
   color: white;
-  
+
   font-weight: bold;
   padding: 10px;
   background-position: center;
@@ -162,25 +201,20 @@ a.active {
   background-repeat: no-repeat;
 }
 
-.offer__block:nth-child(1){
-    background-image: url(./img/vacuum.jpg);
-   
+.offer__block:nth-child(1) {
+  background-image: url(./img/vacuum.jpg);
 }
-.offer__block:nth-child(2){
-    background-image: url(./img/vacuum2.jpg);
-    
+.offer__block:nth-child(2) {
+  background-image: url(./img/vacuum2.jpg);
 }
-.offer__block:nth-child(3){
-    background-image: url(./img/room.png);
-
+.offer__block:nth-child(3) {
+  background-image: url(./img/room.png);
 }
-.offer__block:nth-child(4){
-    background-image: url(./img/car.png);
-    
+.offer__block:nth-child(4) {
+  background-image: url(./img/car.png);
 }
-.offer__block:nth-child(5){
+.offer__block:nth-child(5) {
   background-image: url(./img/floor.png);
-  
 }
 .offer__block:last-child {
   width: 100%;
@@ -193,7 +227,6 @@ a.active {
   background: rgb(255, 255, 255);
 }
 .contact__title {
- 
 }
 .contact__contener {
   display: flex;
@@ -211,16 +244,19 @@ a.active {
 .input__name,
 .input__surname,
 .input__title,
+.input__email,
 .input__message {
+  font-size: 25px;
+  
   height: 50px;
   box-sizing: border-box;
   border: 4px solid rgb(55, 135, 226);
 }
-.contact__form input::placeholder{
+.contact__form input::placeholder {
   padding: 10px;
   font-size: 25px;
- color: rgb(55, 135, 226);
- font-weight: bold;
+  color: rgb(55, 135, 226);
+  font-weight: bold;
 }
 .input__name {
   width: 49%;
@@ -229,8 +265,13 @@ a.active {
   width: 50%;
   float: right;
 }
+.input__email {
+  width: 50%;
+  float: right;
+  margin-top: 10px;
+}
 .input__title {
-  width: 100%;
+  width: 49%;
   margin-top: 10px;
 }
 .input__message {
@@ -243,7 +284,7 @@ a.active {
   height: 50px;
   margin-top: 10px;
   box-sizing: border-box;
- 
+
   color: white;
   border: none;
   background: rgb(55, 135, 226);
@@ -270,7 +311,7 @@ a.active {
   margin-left: 50px;
   width: 190px;
   height: 100px;
- 
+
   font-weight: bold;
 }
 
@@ -279,108 +320,126 @@ a.active {
   align-items: center;
   margin-left: 30px;
   color: white;
-  padding-top: 20px
-
+  padding-top: 20px;
 }
 
-.footer__bottom{
-    display: flex;
-    margin-top: 55px;
-    color: white;
+.footer__bottom {
+  display: flex;
+  margin-top: 55px;
+  color: white;
 }
-.bottom__office{
-    border-right: 3px solid rgb(255, 255, 255);
-    width: 30%;
-    padding-left: 50px;
+.bottom__office {
+  border-right: 3px solid rgb(255, 255, 255);
+  width: 30%;
+  padding-left: 50px;
 }
-.office__header{
- 
-    font-weight: bold;
+.office__header {
+  font-weight: bold;
 }
-.office__text{
-    margin-top: 25px;
-   
+.office__text {
+  margin-top: 25px;
 }
-.bottom__hours{
-    margin-left: 50px;
+.bottom__hours {
+  margin-left: 50px;
 }
 
-.hours__header{
-    font-weight: bold;
-   
+.hours__header {
+  font-weight: bold;
 }
-.hours__text{
-    margin-top: 25px;
- 
+.hours__text {
+  margin-top: 25px;
 }
-.footer__signature{
-    color: white;
-    text-align: center;
-   
-    margin-top: 100px;
+.footer__signature {
+  color: white;
+  text-align: center;
+
+  margin-top: 100px;
 }
 
 /* Font sizes groups */
-.navigation__top{
-  font-size: 20px;
+.navigation__top {
+  font-size: 25px;
 }
-.main__title{
-  font-size: 50px;
+.main__title {
+  font-size: 70px;
   letter-spacing: 3px;
 }
-.main__subtitle, .main__button, .why__answers, .office__text, .hours__text, .footer__title, .footer__signature{
+.main__subtitle,
+.main__button,
+.why__answers,
+.office__text,
+.hours__text,
+.footer__title,
+.footer__signature {
   font-size: 25px;
 }
 
-.bar, .bottom__logo, .why__title, .office__header, .offer__block, .hours__header, .footer__logo, .contact__button{
+.bar,
+.bottom__logo,
+.why__title,
+.office__header,
+.offer__block,
+.hours__header,
+.footer__logo,
+.contact__button {
   font-size: 40px;
 }
 
 /* ----------------- */
 
-
-@media (max-width: 1000px){
-  .main{
+@media (max-width: 1000px) {
+  .main {
     height: 50vw;
   }
 }
 
-@media (max-width: 800px){
- 
-  .navigation__top{
+@media (max-width: 800px) {
+  .navigation__top {
     font-size: 20px;
   }
-  .main__title{
+  .main__title {
     font-size: 40px;
     letter-spacing: 3px;
   }
-  .main__subtitle, .main__button, .why__answers, .offer__block, .office__text, .hours__text, .footer__title, .footer__signature{
+  .main__subtitle,
+  .main__button,
+  .why__answers,
+  .offer__block,
+  .office__text,
+  .hours__text,
+  .footer__title,
+  .footer__signature {
     font-size: 20px;
   }
-  
-  .bar, .bottom__logo, .why__title, .office__header, .hours__header, .footer__logo, .contact__button{
+
+  .bar,
+  .bottom__logo,
+  .why__title,
+  .office__header,
+  .hours__header,
+  .footer__logo,
+  .contact__button {
     font-size: 30px;
   }
-  .contact__contener{
+  .contact__contener {
     display: block;
   }
-  .contact__map{
-    margin:  0 auto;
+  .contact__map {
+    margin: 0 auto;
     width: 90%;
     height: 60vw;
   }
-  .contact__form{
+  .contact__form {
     margin-top: 15px;
     width: 90%;
-   
   }
-  #map{
+  #map {
     height: 60vw;
   }
   .contact__form {
     width: 90%;
-  
-   height: auto;
+
+    height: auto;
     margin: 50px auto;
   }
   .input__name,
@@ -392,96 +451,107 @@ a.active {
     border: 2px solid rgb(55, 135, 226);
   }
 }
-@media (max-width: 640px){
- 
-  .navigation__top{
+@media (max-width: 640px) {
+  .navigation__top {
     font-size: 18px;
   }
-  .main__title{
+  .main__title {
     font-size: 30px;
     letter-spacing: 3px;
   }
-  .main__subtitle, .main__button, .why__answers, .offer__block, .office__text, .hours__text, .footer__title, .footer__signature{
+  .main__subtitle,
+  .main__button,
+  .why__answers,
+  .offer__block,
+  .office__text,
+  .hours__text,
+  .footer__title,
+  .footer__signature {
     font-size: 18px;
   }
-  
-  .bar, .bottom__logo, .why__title, .office__header, .hours__header, .footer__logo, .contact__button{
+
+  .bar,
+  .bottom__logo,
+  .why__title,
+  .office__header,
+  .hours__header,
+  .footer__logo,
+  .contact__button {
     font-size: 25px;
   }
-  .contact__form input::placeholder{
+  .contact__form input::placeholder {
     font-size: 18px;
   }
 }
 
-@media (max-width: 560px){
- 
-  .main{
+@media (max-width: 560px) {
+  .main {
     height: 60vw;
     background: rgb(65, 65, 65);
   }
-  .why__answers{
+  .why__answers {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
   }
-  .answer{
+  .answer {
     margin-top: 25px;
     width: 40%;
   }
-  .answer img{
+  .answer img {
     width: 35vw;
   }
-  .answer__text{
+  .answer__text {
     text-align: center;
   }
   .answer:not(:last-child) {
     border: none;
   }
- 
 }
 
-@media (max-width: 500px){
-  .offer{
+@media (max-width: 500px) {
+  .offer {
     display: block;
   }
-  .offer__block{
+  .offer__block {
     width: 100%;
   }
   .offer__block:last-child {
     width: 100%;
-   height: 30vw;
-   
+    height: 30vw;
   }
 
-  .footer__logo{
+  .footer__logo {
     height: 50px;
   }
-  .footer__title{
+  .footer__title {
     font-size: 15px;
   }
-  .footer__bottom{
+  .footer__bottom {
     display: block;
   }
-  .bottom__office, .bottom__hours{
+  .bottom__office,
+  .bottom__hours {
     border: none;
     padding: 0;
     margin: 0 auto;
     text-align: center;
   }
-  .bottom__office{
+  .bottom__office {
     width: 90%;
   }
-  .office__text, .hours__text{
+  .office__text,
+  .hours__text {
     margin-top: 5px;
   }
-  .hours__header{
+  .hours__header {
     margin-top: 20px;
   }
 
   .contact__form {
     width: 90%;
-  
-   height: auto;
+
+    height: auto;
     margin: 50px auto;
   }
   .input__name,
@@ -494,27 +564,39 @@ a.active {
   }
 }
 
-
-@media (max-width: 460px){
-  .main{
+@media (max-width: 460px) {
+  .main {
     height: 70vw;
   }
 
-  .navigation__top{
+  .navigation__top {
     font-size: 15px;
   }
-  .main__title{
+  .main__title {
     font-size: 25px;
     letter-spacing: 2px;
   }
-  .main__subtitle, .main__button, .why__answers, .offer__block, .office__text, .hours__text, .footer__title, .footer__signature{
+  .main__subtitle,
+  .main__button,
+  .why__answers,
+  .offer__block,
+  .office__text,
+  .hours__text,
+  .footer__title,
+  .footer__signature {
     font-size: 16px;
   }
-  
-  .bar, .bottom__logo, .why__title, .office__header, .hours__header, .footer__logo, .contact__button{
+
+  .bar,
+  .bottom__logo,
+  .why__title,
+  .office__header,
+  .hours__header,
+  .footer__logo,
+  .contact__button {
     font-size: 22px;
   }
-  .contact__form input::placeholder{
+  .contact__form input::placeholder {
     font-size: 16px;
   }
 }
