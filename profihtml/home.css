@@ -163,23 +163,23 @@ a.active {
 }
 
 .offer__block:nth-child(1){
-    background-image: url(/img/vacuum.jpg);
+    background-image: url(./img/vacuum.jpg);
    
 }
 .offer__block:nth-child(2){
-    background-image: url(/img/vacuum2.jpg);
+    background-image: url(./img/vacuum2.jpg);
     
 }
 .offer__block:nth-child(3){
-    background-image: url(/img/room.png);
+    background-image: url(./img/room.png);
 
 }
 .offer__block:nth-child(4){
-    background-image: url(/img/car.png);
+    background-image: url(./img/car.png);
     
 }
 .offer__block:nth-child(5){
-  background-image: url(/img/floor.png);
+  background-image: url(./img/floor.png);
   
 }
 .offer__block:last-child {
