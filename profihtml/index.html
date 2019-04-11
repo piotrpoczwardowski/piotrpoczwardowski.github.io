@@ -43,7 +43,7 @@
       </div>
     </nav>
     <div class="background">
-      <video autoplay loop>
+      <video muted="muted" autoplay loop>
         <source src="car.mp4" type="video/mp4" />
         <source src="car.ogg" type="video/ogg">
         Your browser does not support the video tag.
@@ -181,7 +181,7 @@
     </footer>
 
     <script>
-   
+      var main=  document.querySelector('.main')
       var video = document.querySelector(".background video");
      var el = document.querySelectorAll('.bar, .why__title, .answer__icon, .answer__text, .offer__block,.contact__title, .contact__map, .contact__form')
       window.addEventListener("resize", function(event) {
@@ -207,6 +207,7 @@
       appearingOnScroll(x)
     })
   })
+ 
     </script>
   
   </body>

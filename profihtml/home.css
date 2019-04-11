@@ -445,6 +445,7 @@ a.active {
   .input__name,
   .input__surname,
   .input__title,
+  .input__email,
   .input__message {
     height: 40px;
     box-sizing: border-box;
@@ -485,6 +486,9 @@ a.active {
 }
 
 @media (max-width: 560px) {
+  .bottom__links{
+    visibility: hidden;
+  }
   .main {
     height: 60vw;
     background: rgb(65, 65, 65);
@@ -499,7 +503,7 @@ a.active {
     width: 40%;
   }
   .answer img {
-    width: 35vw;
+    
   }
   .answer__text {
     text-align: center;
